@@ -4,6 +4,11 @@
     margin: 0 auto;
 
 }
+.splash-screen .canvas{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
 .details{
     width: 100%;
     /* height: fit-content; */
@@ -38,7 +43,7 @@
 }
 .explore:hover{
     cursor: pointer;
-    color: #fff;
+    /* color: #fff; */
 }
 .explore::before{
     content:"";
@@ -47,7 +52,8 @@
     top:0;
     width: 100%;
     height: 100%;
-    background: #000;
+    /* background: #000; */
+    border: 1px solid black;
     border-radius: 14px;
     z-index: -1;
     transition: transform .5s;
