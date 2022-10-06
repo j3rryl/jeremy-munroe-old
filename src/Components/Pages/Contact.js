@@ -1,6 +1,14 @@
+import '../../scss/contact.scss'
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className="contact-page">
+      <div className="back">
+        <h3>ssd</h3>
+      </div>
+      <div className="back-2">
+      <h3>ssd</h3>
+      </div>
+      </div>
   )
 }
 
