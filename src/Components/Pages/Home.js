@@ -50,15 +50,17 @@ const Home = () => {
       <div className='container container-1'>
       <Header />
       <div className='details'>
+      
+      <div className='block profile-image'>
+
+      </div>
       <div className='block synopsis'>
         <h3 className='title'>Website and User Interface Design</h3>
+        <hr />
         <p>
         I am a Codaholic very much in love with anything which has 1s and 0s.
         This has culminated an adventure I took to learn every possible language I can.
         </p>
-      </div>
-      <div className='block profile-image'>
-
       </div>
 
       </div>
@@ -70,7 +72,7 @@ const Home = () => {
       <div className='block synopsis'>
         <h3 className='title'>About Me</h3>
         <hr />
-        <p>
+        <p className='about-text'>
         Education, hobbies and all past work experiences here.
         </p>
         <button className='read-about'>
@@ -108,16 +110,20 @@ const Home = () => {
       {/* Projects */}
       <div className='container container-3'>
       <div className='details'>
-      <div className='block synopsis'>
-        <h3 className='title'>Projects</h3>
-        <p>
-          View my projects here.
-        </p>
-      </div>
+      
       <div className='block profile-image'>
 
       </div>
-      
+      <div className='block synopsis'>
+        <h3 className='title'>Projects</h3>
+        <hr />
+        <p>
+          View all my latest projects.
+        </p>
+        <button className='view-all'>
+          View All
+        </button>
+      </div>
       </div>
       </div>
     </div>

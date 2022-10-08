@@ -8,6 +8,8 @@ import About from './Components/Pages/About'
 import Projects from './Components/Pages/Projects'
 import Cases from './Components/Pages/Cases'
 import Contact from './Components/Pages/Contact'
+import Me from './Components/Pages/Me'
+
 import {AnimatePresence} from 'framer-motion'
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
       <Route path='/projects' element={<Projects />}/>
       <Route path='/cases' element={<Cases />}/>
       <Route path='/contact' element={<Contact />}/>
+      <Route path='/me' element={<Me />}/>
+
     </Routes>
     </AnimatePresence>
   );
