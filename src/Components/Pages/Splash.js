@@ -1,18 +1,37 @@
 import { useNavigate } from 'react-router-dom'
-import { useState, useRef } from 'react'
+import { useState, useRef, Suspense, useEffect, lazy } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Points, PointMaterial } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
+import {motion} from 'framer-motion'
 import '../../css/splash.css'
 const Splash = () => {
+  const [isMounted, setIsMounted] = useState(false);
+    useEffect(() => {
+      setIsMounted(true);
+    }, []);
   let navigate=useNavigate()
   
   return (
+    <motion.div 
+    className='motion'
+    // initial={{scaleY:0}} 
+    // animate={{scaleY:1}}
+    // exit={{scaleY:0}}
+    transition={{duration : 1}}
+    initial={{opacity:0}} 
+    animate={{opacity:1}}
+    exit={{opacity:0}}
+    >
     <div className='splash-screen'>
       <div className='canvas'>
-      <Canvas>
-        <Stars />
-      </Canvas>
+      { !isMounted ? null : (
+      <Suspense fallback={null}>
+        <Canvas>
+          <Stars />
+        </Canvas>
+      </Suspense>
+      )}
       </div>
       <div className='details'>
       <h1 className='title'>Jeremy Munroe</h1>
@@ -23,6 +42,7 @@ const Splash = () => {
       </div>
       
     </div>
+    </motion.div>
   )
 }
 function Stars(props) {

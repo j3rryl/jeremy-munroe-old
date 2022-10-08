@@ -1,23 +1,53 @@
 import '../../scss/home.scss'
-import { useState, useRef } from 'react'
+import '../../scss/swiper.scss'
+
+import { useState, useRef, Suspense, useEffect, lazy } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Points, PointMaterial } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
 import Header from '../Header'
+import {motion} from 'framer-motion'
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cards";
+// import required modules
+import { EffectCards, Autoplay } from "swiper";
 
 const Home = () => {
+    const [isColor, setColor]=useState('#000');
+    const [isMounted, setIsMounted] = useState(false);
+    useEffect(() => {
+      setColor('#000')
+      setIsMounted(true);
+    }, []);
+    const ThreeCanvas = lazy(() => import('./Stars'));
   return (
-    
+    <motion.div 
+    className='motion'
+    // initial={{scaleY:0}} 
+    // animate={{scaleY:1}}
+    // exit={{scaleY:0}}
+    transition={{duration : 1}}
+    initial={{opacity:0}} 
+    animate={{opacity:1}}
+    exit={{opacity:0}}
+    >
     <div className='home-page'>
 
       {/* Cover Page */}
       <div className='canvas'>
-        <Canvas>
-          <Stars />
-        </Canvas>
+      { !isMounted ? null : (
+        <Suspense fallback={null}>
+          <Canvas>
+            <Stars />
+          </Canvas>
+        </Suspense>
+      )}
       </div>
+
       <div className='container container-1'>
-          {/* <Stars /> */}
       <Header />
       <div className='details'>
       <div className='block synopsis'>
@@ -35,15 +65,40 @@ const Home = () => {
       </div>
 
       {/* About Me */}
-      <div className='container'>
+      <div className='container container-2'>
       <div className='details'>
       <div className='block synopsis'>
         <h3 className='title'>About Me</h3>
+        <hr />
         <p>
         Education, hobbies and all past work experiences here.
         </p>
+        <button className='read-about'>
+          Read More
+        </button>
       </div>
       <div className='block profile-image'>
+      <Swiper
+        effect={"cards"}
+        grabCursor={true}
+        autoplay={{
+          delay: 8500,
+          disableOnInteraction: false
+        }}
+        modules={[EffectCards, Autoplay]}
+        // loop={true}
+        className="mySwiper"
+      >
+        <SwiperSlide>Work</SwiperSlide>
+        <SwiperSlide>Education</SwiperSlide>
+        <SwiperSlide>Hobbies</SwiperSlide>
+        <SwiperSlide>Skills</SwiperSlide>
+        <SwiperSlide></SwiperSlide>
+        {/* <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide> */}
+      </Swiper>
 
       </div>
       
@@ -51,7 +106,7 @@ const Home = () => {
       </div>
 
       {/* Projects */}
-      <div className='container container-1'>
+      <div className='container container-3'>
       <div className='details'>
       <div className='block synopsis'>
         <h3 className='title'>Projects</h3>
@@ -66,9 +121,15 @@ const Home = () => {
       </div>
       </div>
     </div>
+    </motion.div>
   )
 }
 function Stars(props) {
+  const [isColor, setColor]=useState('#fff');
+  useEffect(() => {
+    setColor('#fff')
+    setColor('#286B64')
+  }, []);
   const ref = useRef()
   const [sphere] = useState(() => random.inSphere(new Float32Array(15000), { radius: 9.5 }))
   useFrame((state, delta) => {
@@ -78,7 +139,7 @@ function Stars(props) {
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
       <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
-        <PointMaterial transparent color="#fff" size={0.020} sizeAttenuation={true} depthWrite={false} />
+        <PointMaterial transparent color={isColor} size={0.020} sizeAttenuation={true} depthWrite={false} />
       </Points>
     </group>
   )

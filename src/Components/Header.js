@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import '../css/header.css'
+import { Link,NavLink } from 'react-router-dom'
+import '../scss/header.scss'
 const Header = () => {
   return (
     <header className='header'>
