@@ -9,6 +9,7 @@ import img2 from '../../images/about/education.jpg'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Preload, Image as ImageImpl  } from '@react-three/drei'
 import { ScrollControls, Scroll, useScroll } from '@react-three/drei'
+import Vid from './Vid'
 // import { ScrollControls, Scroll, useScroll } from './ScrollControls'
 
 function Image(props) {
