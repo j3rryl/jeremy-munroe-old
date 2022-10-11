@@ -11,6 +11,7 @@ import Contact from './Components/Pages/Contact'
 import Me from './Components/Pages/Me'
 
 import {AnimatePresence} from 'framer-motion'
+import Vid from './Components/Pages/Vid';
 
 function App() {
   const location=useLocation()
@@ -25,6 +26,7 @@ function App() {
       <Route path='/cases' element={<Cases />}/>
       <Route path='/contact' element={<Contact />}/>
       <Route path='/me' element={<Me />}/>
+      <Route path='/vid' element={<Vid />}/>
 
     </Routes>
     </AnimatePresence>

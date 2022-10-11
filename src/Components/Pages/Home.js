@@ -14,6 +14,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 // import required modules
 import { EffectCards, Autoplay } from "swiper";
+import Pages from './Pages'
 
 const Home = () => {
     const [isColor, setColor]=useState('#000');
@@ -52,7 +53,7 @@ const Home = () => {
       <div className='details'>
       
       <div className='block profile-image'>
-
+        <Pages />
       </div>
       <div className='block synopsis'>
         <h3 className='title'>Website and User Interface Design</h3>
@@ -84,7 +85,7 @@ const Home = () => {
         effect={"cards"}
         grabCursor={true}
         autoplay={{
-          delay: 8500,
+          delay: 2500,
           disableOnInteraction: false
         }}
         modules={[EffectCards, Autoplay]}
@@ -118,7 +119,7 @@ const Home = () => {
         <h3 className='title'>Projects</h3>
         <hr />
         <p>
-          View all my latest projects.
+          Rather then flex with experience, let me show you my work.
         </p>
         <button className='view-all'>
           View All

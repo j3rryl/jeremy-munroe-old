@@ -3,7 +3,16 @@ html,body,#root{
   padding: 0;
   height: 100%;
   width: 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+::-webkit-scrollbar {
+  display:none;
+}
+
 body{
   overscroll-behavior: none;
+  
+  /* cursor: url('../images/cursor/black-cursor.svg'),auto; */
+
 }
