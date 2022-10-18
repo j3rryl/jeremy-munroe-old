@@ -145,7 +145,6 @@
     .work-experience{
         width: 100vw;
         height: 100vh;
-        position: relative;
         .work-tab{
             margin-left: 6vw;
             width: 25%;
@@ -308,6 +307,33 @@
                 }
             }
         }
+        .skills{
+            width: 100%;
+            height: 100%;
+            margin-top: 10vh;
+            .skills-title{
+                width: 40%;
+                h3{
+                    position: relative;
+                    text-align: center;
+                }
+                hr{
+                    background-color: #000;
+                    position: relative;
+                    width: 50%;
+                }
+            }
+            .skillset{
+                margin: 0 auto;
+                margin-top: 5vh;
+                padding: 0;
+                width: 70%;
+                height: 75%;
+                // border: 1px solid black;
+                position: relative;
+            }
+        }
     }
+    
 }
 

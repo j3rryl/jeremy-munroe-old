@@ -17,6 +17,7 @@ import corel from '../../images/about/corel.webp'
 import datae from '../../images/about/data.webp'
 import assis from '../../images/about/assis.webp'
 import nema from '../../images/about/nema.jpg'
+import Skillset from '../Skillset'
 
 
 
@@ -199,10 +200,19 @@ const About = () => {
         </div>
         </div>
         </div>
-      </div>
       <div className='skills'>
-
+        <div className='skills-title'>
+        <h3>Skills</h3>
+        <hr/>
+        </div>
+        <div className='skillset'>
+        <Skillset />
+        </div>
+        
+      
       </div>
+      </div>
+      
       <div className='hobbies'>
 
       </div>
