@@ -1,9 +1,17 @@
 import * as THREE from 'three'
 
 import { Suspense, useRef } from 'react'
-import img from '../../images/about/work.jpg'
-import img1 from '../../images/about/hobbies.webp'
-import img2 from '../../images/about/education.jpg'
+import img1 from '../../images/cover/android.jpg'
+import img2 from '../../images/cover/cpp.webp'
+import img3 from '../../images/cover/git.jpg'
+import img4 from '../../images/cover/sql.jpg'
+import img5 from '../../images/cover/php.webp'
+import img6 from '../../images/cover/java.jpg'
+import img7 from '../../images/cover/python.jpg'
+import img8 from '../../images/cover/react.webp'
+import img9 from '../../images/cover/kotlin.webp'
+
+
 
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Preload, Image as ImageImpl  } from '@react-three/drei'
@@ -42,12 +50,12 @@ function Page({ m = 0.4, urls, ...props }) {
     const { width } = useThree((state) => state.viewport)
     return (
       <>
-    <Page position={[-width * 1, 0, 0]} urls={[img,img1,img2]} />
-    <Page position={[width * 0, 0, 0]} urls={[img1,img2,img]} />
-    <Page position={[width * 1, 0, 0]} urls={[img2,img,img1]} />
-    <Page position={[width * 2, 0, 0]} urls={[img,img1,img2]} />
-    <Page position={[width * 3, 0, 0]} urls={[img1,img2,img]} />
-    <Page position={[width * 4, 0, 0]} urls={[img2,img1,img]} />
+    <Page position={[-width * 1, 0, 0]} urls={[img1,img2,img3]} />
+    <Page position={[width * 0, 0, 0]} urls={[img4,img5,img6]} />
+    <Page position={[width * 1, 0, 0]} urls={[img7,img8,img9]} />
+    <Page position={[width * 2, 0, 0]} urls={[img3,img2,img1]} />
+    <Page position={[width * 3, 0, 0]} urls={[img6,img5,img4]} />
+    <Page position={[width * 4, 0, 0]} urls={[img9,img8,img7]} />
       </>
     )
   }
@@ -61,8 +69,8 @@ export default function Pages() {
             <Gallery />
           </Scroll>
           <Scroll html>
-            <h1 style={{ position: 'absolute', top: '20vh', left: '22vw', color:'#fff' }}>Scroll</h1>
-            <h1 style={{ position: 'absolute', top: '25vh', left: '23vw', color:'#fff', letterSpacing: '.25em' }}>{'>>>'}</h1>
+            {/* <h1 style={{ position: 'absolute', top: '20vh', left: '22vw', color:'#fff' }}>Scroll</h1>
+            <h1 style={{ position: 'absolute', top: '25vh', left: '23vw', color:'#fff', letterSpacing: '.25em' }}>{'>>>'}</h1> */}
           </Scroll>
         </ScrollControls>
         <Preload />

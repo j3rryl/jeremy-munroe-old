@@ -1,61 +1,215 @@
+import React from 'react'
 import '../../scss/about.scss'
 
-import { useState, useRef } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { Points, PointMaterial } from '@react-three/drei'
-import * as random from 'maath/random/dist/maath-random.esm'
+import starch from '../../images/logo/starehe.jpg'
+import strath from '../../images/logo/strath.png'
+import Space from '../Space'
+import { Canvas } from '@react-three/fiber'
+import { Suspense } from 'react'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade, Autoplay, Navigation, Pagination } from "swiper";
+import lab1 from '../../images/about/lab1.jpg'
+import lab2 from '../../images/about/lab2.jpg'
+import lab3 from '../../images/about/lab3.jpg'
+import ai from '../../images/about/ai.jpg'
+import ap from '../../images/about/ap.webp'
+import corel from '../../images/about/corel.webp'
+import datae from '../../images/about/data.webp'
+import assis from '../../images/about/assis.webp'
+import nema from '../../images/about/nema.jpg'
+
+
+
+
+
+
 
 const About = () => {
   return (
-    <div>
-      <Overlay />
-    <div className='canvas'>
-        <Canvas>
-          <Stars />
-      </Canvas>
-    </div>
-    </div>
-  )
-}
-// export default function About() {
-//   return (
-//     <div>
-//     <Overlay />
-//     <div className='canvas'>
-//     <Canvas camera={{ position: [0, 0, 1] }}>
-//       <Stars />
-//     </Canvas>
-//     </div>
+    <div className='about-page'>
+      <div className='canvas'>
+      <Suspense fallback={null}>
+          <Canvas>
+            <Space />
+          </Canvas>
+        </Suspense>
+        </div>
+      <div className='education-tab'>
+        <div className='edu-tab'>
+        <h3 className='edu-title'>Education</h3>
+        <hr />
+        </div>
+        <div className='schools'>
+          <div className='starehe'>
+            <div className='starehe-image'>
+            {/* <img className='starch-img' src={starch}/> */}
+            </div>
+            <div className='starehe-details'>
+              <h4>Starehe Boys' Centre and School</h4>
+              <p>Start Date: 2nd Feb 2016</p>
+              <p>End Date Date: 16th November 2016</p>
+              <p>Certification: KCSE</p>
+              <p>Grade: A-</p>
+            </div>
+            <div className='back-photo'>
 
-//     </div>
-//   )
-// }
-function Stars(props) {
-  const ref = useRef()
-  const [sphere] = useState(() => random.inSphere(new Float32Array(25000), { radius: 10.5 }))
-  useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 10
-    ref.current.rotation.y -= delta / 15
-  })
-  return (
-    <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
-        <PointMaterial transparent color="#fff" size={0.025} sizeAttenuation={true} depthWrite={false} />
-      </Points>
-    </group>
-  )
-}
+            </div>
+          </div>
+          <div className='strathmore'>
+            <div className='strath-image'>
+              {/* <img src={strath} className='strath-img'/> */}
+            </div>
+            <div className='strath-details'>
+            <h4>Strathmore University</h4>
+            <p>Start Date: 4th July 2020</p>
+            <p>End Date Date: 16th July 2024</p>
+            <p>Certification: Working progress</p>
+            <p>Grade: A-</p>
+            </div>
+            <div className='back-photo'>
 
-function Overlay() {
-  return (
-    <div style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none', width: '100%', height: '100%' }}>
-      
-      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate3d(-50%,-50%,0)' }}>
-        <h1 style={{ margin: 0, padding: 0, fontSize: '15em', fontWeight: 500, letterSpacing: '-0.05em' }}>i love agie :)</h1>
+            </div>
+           </div>
+        </div>
       </div>
-      <div style={{ position: 'absolute', top: 40, left: 40, fontSize: '13px' }}></div>
-      <div style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '13px' }}>6/10/2022</div>
-    </div>
+      <div className='work-experience'>
+        <div className='work-tab'>
+        <h3 className='work-title'>Work Experience</h3>
+        <hr/>
+        </div>
+        <div className='strath'>
+          <div className='details'>
+            <div className='img-tab'>
+            <Swiper
+            spaceBetween={30}
+            effect={"fade"}
+            navigation={false}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[EffectFade, Navigation, Pagination, Autoplay]}
+            autoplay={{
+              delay: 10000,
+              disableOnInteraction: false
+            }}
+        loop={true}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={lab1} />
+        </SwiperSlide>
+        <SwiperSlide>          
+          <img src={lab2} />
+        </SwiperSlide>
+        <SwiperSlide> 
+            <img src={lab3} />
+        </SwiperSlide>
+      </Swiper>
+            </div>
+            <div className='work-done'>
+          <h3>Lab Assistant</h3>
+          <hr/>
+            <ul>
+          <li>I was responsible for the safe and orderly operation and functionality of a computer lab that was used by lecturers and students</li>
+          <li>Maintained computer lab equipment worth a fortune.</li>
+          <li>Streamlined processes within the lab to make usage more efficient and user-friendly.</li>
+            </ul>
+            </div>
+          </div>
+
+        </div>
+        <div className='nema'>
+        <div className='details'>
+        <div className='work-done'>
+        <h3>Attaché</h3>
+        <hr/>
+        <p>I provided office assistance by:</p>
+        <ul>
+        <li>Maintaining files and dealing with other administrative support tasks.</li>
+        <li>Answering phone calls and taking messages.</li>
+        <li>Welcoming visitors to the office.</li>
+        <li>Providing visitors with information.</li>
+        </ul>
+        </div>
+        <div className='img-tab'>
+        <Swiper
+            spaceBetween={30}
+            effect={"fade"}
+            navigation={false}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[EffectFade, Navigation, Pagination, Autoplay]}
+            autoplay={{
+              delay: 10000,
+              disableOnInteraction: false
+            }}
+        loop={true}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={nema} />
+        </SwiperSlide>
+        <SwiperSlide>          
+          <img src={assis} />
+        </SwiperSlide>
+      </Swiper>
+            </div>
+        </div>
+        </div>
+        <div className='dezana'>
+        <div className='details'>
+        <div className='img-tab'>
+        <Swiper
+            spaceBetween={30}
+            effect={"fade"}
+            navigation={false}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[EffectFade, Navigation, Pagination, Autoplay]}
+            autoplay={{
+              delay: 10000,
+              disableOnInteraction: false
+            }}
+        // loop={true}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src={ai} />
+        </SwiperSlide>
+        <SwiperSlide>          
+          <img src={ap} />
+        </SwiperSlide>
+        <SwiperSlide> 
+            <img src={corel} />
+        </SwiperSlide>
+        <SwiperSlide> 
+            <img src={datae} />
+        </SwiperSlide>
+      </Swiper>
+        </div>
+        <div className='work-done'>
+        <h3>Graphic Design Intern</h3>
+        <hr/>
+        <ul>
+        <li>I worked as Graphic Design Intern. </li>
+	      <li>Later I worked on the e-commerce website, Dezana Hub. I did basic maintenance such as ensuring products uploaded are up to date.</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div className='skills'>
+
+      </div>
+      <div className='hobbies'>
+
+      </div>
+      <div className='user-feedback'>
+
+      </div>
+      </div>
   )
 }
 

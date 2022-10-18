@@ -1,5 +1,5 @@
 import '../../scss/home.scss'
-import '../../scss/swiper.scss'
+// import '../../scss/swiper.scss'
 
 import { useState, useRef, Suspense, useEffect, lazy } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
@@ -15,8 +15,10 @@ import "swiper/css/effect-cards";
 // import required modules
 import { EffectCards, Autoplay } from "swiper";
 import Pages from './Pages'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const navigate=useNavigate()
     const [isColor, setColor]=useState('#000');
     const [isMounted, setIsMounted] = useState(false);
     useEffect(() => {
@@ -76,7 +78,9 @@ const Home = () => {
         <p className='about-text'>
         Education, hobbies and all past work experiences here.
         </p>
-        <button className='read-about'>
+        <button className='read-about' onClick={()=>{
+          navigate('/about')
+        }}>
           Read More
         </button>
       </div>

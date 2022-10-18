@@ -24,6 +24,7 @@ function Image(props) {
   return (
     <group ref={group}>
       <ImageImpl ref={ref} {...props} />
+      
     </group>
   )
 }
