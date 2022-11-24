@@ -36,7 +36,7 @@ const Splash = () => {
       <div className='details'>
       <h1 className='title'>Jeremy Munroe</h1>
       <h1 className='title'>UI/UX Developer</h1>
-      <button className='explore' onClick={()=>{navigate('./home')}}>
+      <button className='explore' onClick={()=>{navigate('/home')}}>
         Explore
       </button>
       </div>
