@@ -3,7 +3,7 @@ import '../../scss/about.scss'
 
 import starch from '../../images/logo/starehe.jpg'
 import strath from '../../images/logo/strath.png'
-import Space from '../Space'
+import Space from '../components/Space'
 import { Canvas } from '@react-three/fiber'
 import { Suspense } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -17,7 +17,7 @@ import corel from '../../images/about/corel.webp'
 import datae from '../../images/about/data.webp'
 import assis from '../../images/about/assis.webp'
 import nema from '../../images/about/nema.jpg'
-import Skillset from '../Skillset'
+import Skillset from '../components/Skillset'
 
 
 
