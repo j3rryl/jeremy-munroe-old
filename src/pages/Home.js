@@ -1,11 +1,11 @@
-import '../../scss/home.scss'
+import '../assets/scss/home.scss'
 // import '../../scss/swiper.scss'
 
 import { useState, useRef, Suspense, useEffect, lazy } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Points, PointMaterial } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
-import Header from '../Header'
+import Header from '../components/Header'
 import {motion} from 'framer-motion'
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,7 +14,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 // import required modules
 import { EffectCards, Autoplay } from "swiper";
-import Pages from './Pages'
+import Pages from '../components/Pages'
 import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
       setColor('#000')
       setIsMounted(true);
     }, []);
-    const ThreeCanvas = lazy(() => import('./Stars'));
+    // const ThreeCanvas = lazy(() => import('./Stars'));
   return (
     <motion.div 
     className='motion'

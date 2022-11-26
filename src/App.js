@@ -2,16 +2,14 @@ import './App.css';
 import "swiper/css/bundle";
 
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Splash from './Components/Pages/Splash'
-import Home from './Components/Pages/Home'
-import About from './Components/Pages/About'
-import Projects from './Components/Pages/Projects'
-import Cases from './Components/Pages/Cases'
-import Contact from './Components/Pages/Contact'
-import Me from './Components/Pages/Me'
+import Splash from './pages/Splash'
+import Home from './pages/Home'
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Cases from './pages/Cases'
+import Contact from './pages/Contact'
 
 import {AnimatePresence} from 'framer-motion'
-import Vid from './Components/Pages/Vid';
 
 function App() {
   const location=useLocation()
@@ -21,14 +19,11 @@ function App() {
     <Routes location={location} key={location.pathname}>
       <Route path='/' element={<Splash />}/>
       <Route path='/portfolio' element={<Splash />}/>
-      <Route path='/home' element={<Home />}/>
+      {/* <Route path='/home' element={<Home />}/>
       <Route path='/about' element={<About />}/>
       <Route path='/projects' element={<Projects />}/>
       <Route path='/cases' element={<Cases />}/>
-      <Route path='/contact' element={<Contact />}/>
-      <Route path='/me' element={<Me />}/>
-      <Route path='/vid' element={<Vid />}/>
-
+      <Route path='/contact' element={<Contact />}/> */}
     </Routes>
     </AnimatePresence>
   );

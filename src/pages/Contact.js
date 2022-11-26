@@ -1,4 +1,4 @@
-import '../../scss/contact.scss'
+import '../assets/scss/contact.scss'
 const Contact = () => {
   return (
     <div className="contact-page">

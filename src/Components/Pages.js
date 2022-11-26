@@ -1,15 +1,15 @@
 import * as THREE from 'three'
 
 import { Suspense, useRef } from 'react'
-import img1 from '../../images/cover/android.jpg'
-import img2 from '../../images/cover/cpp.webp'
-import img3 from '../../images/cover/git.jpg'
-import img4 from '../../images/cover/sql.jpg'
-import img5 from '../../images/cover/php.webp'
-import img6 from '../../images/cover/java.jpg'
-import img7 from '../../images/cover/python.jpg'
-import img8 from '../../images/cover/react.webp'
-import img9 from '../../images/cover/kotlin.webp'
+import img1 from '../assets/images/cover/android.jpg'
+import img2 from '../assets/images/cover/cpp.webp'
+import img3 from '../assets/images/cover/git.jpg'
+import img4 from '../assets/images/cover/sql.jpg'
+import img5 from '../assets/images/cover/php.webp'
+import img6 from '../assets/images/cover/java.jpg'
+import img7 from '../assets/images/cover/python.jpg'
+import img8 from '../assets/images/cover/react.webp'
+import img9 from '../assets/images/cover/kotlin.webp'
 
 
 
