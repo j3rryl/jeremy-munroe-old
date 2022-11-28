@@ -6,6 +6,7 @@ import {motion} from 'framer-motion'
 import Pages from '../components/Pages'
 import { useNavigate } from 'react-router-dom'
 import CanvasScene from '../components/CanvasScene'
+import GalleryScene from '../components/Gallery/GalleryScene'
 import GrabSlider from '../components/Sliders/GrabSlider'
 
 const Home = () => {
@@ -31,7 +32,9 @@ const Home = () => {
 
       <div className='mx-5 h-full md:m-10 relative inline-block md:flex items-center justify-around'>
         <div className='h-3/4 md:h-2/3 md:w-1/2 m-auto'>
-          <Pages />
+          {/* <Pages /> */}
+          {/* <CanvasScene children={<GalleryScene/>} gl={{ antialias: false }} dpr={[1, 1.5]} /> */}
+          <GalleryScene/>
         </div>
         <div className='px-5 md:h-2/5 md:w-2/5 m-auto border-none'>
           <h3 className=' text-2xl text-center'>Website and User Interface Design</h3>

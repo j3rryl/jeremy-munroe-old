@@ -2,9 +2,8 @@ import React from 'react'
 import { useState, Suspense, useEffect } from 'react'
 import { Canvas} from '@react-three/fiber'
 
-import PropTypes from 'prop-types'
 
-const CanvasScene = ({children}) => {
+const CanvasScene = ({children, gl, dpr}) => {
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
     setIsMounted(true);
@@ -13,7 +12,7 @@ const CanvasScene = ({children}) => {
   <>
     { !isMounted ? null : (
       <Suspense fallback={<div>Loading...</div>}>
-        <Canvas>
+        <Canvas gl={gl} dpr={dpr}>
           {children}
         </Canvas>
       </Suspense>
@@ -21,7 +20,4 @@ const CanvasScene = ({children}) => {
     </>
   )
 }
-
-CanvasScene.propTypes = {}
-
 export default CanvasScene
