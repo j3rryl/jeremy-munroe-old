@@ -19,8 +19,8 @@ function App() {
     <Routes location={location} key={location.pathname}>
       <Route path='/' element={<Splash />}/>
       <Route path='/portfolio' element={<Splash />}/>
-      {/* <Route path='/home' element={<Home />}/>
-      <Route path='/about' element={<About />}/>
+      <Route path='/home' element={<Home />}/>
+      {/* <Route path='/about' element={<About />}/>
       <Route path='/projects' element={<Projects />}/>
       <Route path='/cases' element={<Cases />}/>
       <Route path='/contact' element={<Contact />}/> */}

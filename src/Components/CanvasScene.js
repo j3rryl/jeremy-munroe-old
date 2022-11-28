@@ -12,7 +12,7 @@ const CanvasScene = ({children}) => {
   return (
   <>
     { !isMounted ? null : (
-      <Suspense fallback={null}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Canvas>
           {children}
         </Canvas>

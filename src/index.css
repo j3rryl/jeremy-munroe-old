@@ -16,6 +16,6 @@ html,body,#root{
 body{
   overscroll-behavior: none;
   
-  /* cursor: url('images/cursor/black-cursor.svg'),auto;  */
+  cursor: url('./assets/images/cursor/black-cursor.svg'),auto; 
 
 }
