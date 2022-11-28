@@ -61,8 +61,8 @@ const Home = () => {
           Read More
         </button>
       </div>
-      <div className=' hidden md:flex h-3/4 mx-1 md:h-2/3 md:w-1/2 m-auto'>
-      <GrabSlider sliderStyle='w-2/5 h-11/12 relative m-auto'/>
+      <div className=' hidden overflow-hidden md:flex h-3/4 mx-1 md:h-2/3 md:w-1/2 m-auto'>
+      <GrabSlider sliderStyle='md:w-3/5 lg:w-2/5 h-11/12 relative m-auto'/>
       </div>
       
       </div>
