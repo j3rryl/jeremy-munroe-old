@@ -1,11 +1,5 @@
-import React from 'react'
 import '../assets/scss/about.scss'
-
-import starch from '../assets/images/logo/starehe.jpg'
-import strath from '../assets/images/logo/strath.png'
-import Space from '../components/Space'
-import { Canvas } from '@react-three/fiber'
-import { Suspense } from 'react'
+import { lazy } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Navigation, Pagination } from "swiper";
 import lab1 from '../assets/images/about/lab1.jpg'
@@ -18,6 +12,7 @@ import datae from '../assets/images/about/data.webp'
 import assis from '../assets/images/about/assis.webp'
 import nema from '../assets/images/about/nema.jpg'
 import Skillset from '../components/Skillset'
+import CanvasScene from '../components/CanvasScene'
 
 
 
@@ -26,14 +21,11 @@ import Skillset from '../components/Skillset'
 
 
 const About = () => {
+  const StarScene = lazy(() => import('../components/Stars'));
   return (
     <div className='about-page'>
       <div className='canvas'>
-      <Suspense fallback={null}>
-          <Canvas>
-            <Space />
-          </Canvas>
-        </Suspense>
+      <CanvasScene children={<StarScene />} />
         </div>
       <div className='education-tab'>
         <div className='edu-tab'>

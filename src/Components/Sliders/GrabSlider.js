@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import '../../assets/css/grabslider.css'
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -30,7 +29,5 @@ const GrabSlider = ({sliderStyle}) => {
       </Swiper>
   )
 }
-
-GrabSlider.propTypes = {}
 
 export default GrabSlider

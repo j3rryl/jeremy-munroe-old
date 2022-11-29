@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import { useState, useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { Points, PointMaterial } from '@react-three/drei'
@@ -20,6 +19,5 @@ function Stars(props) {
   )
 }
 
-Stars.propTypes = {}
 
 export default Stars

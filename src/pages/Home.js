@@ -22,14 +22,14 @@ const Home = () => {
     animate={{opacity:1}}
     exit={{opacity:0}}
     >
-    <div className='home-page w-full h-full bg-none'>
+    <div className='home-page md:overflow-x-hidden w-full h-full bg-none'>
 
       {/* Cover Page */}
       <div className='canvas w-full h-full fixed'>
       <CanvasScene children={<StarScene/>}/>
       </div>
 
-      <div className='mx-5 h-full md:m-10 relative inline-block md:flex items-center justify-around'>
+      <div className='mx-5 h-full md:overflow-hidden md:m-10 relative inline-block md:flex items-center justify-around'>
         <div className='h-3/4 md:h-2/3 md:w-1/2 m-auto'>
           {/* <Pages /> */}
           <CanvasScene children={<GalleryScene/>} gl={{ antialias: false }} dpr={[1, 1.5]} />
@@ -58,7 +58,7 @@ const Home = () => {
         Education, hobbies and all past work experiences here.
         </p>
         <button className='explore px-10 py-5 text-base my-8 mx-auto text-center h-fit w-fit' onClick={()=>{
-          navigate('/about')
+          navigate('/home')
         }}>
           Read More
         </button>
@@ -70,7 +70,7 @@ const Home = () => {
       </div>
 
       {/* Projects */}
-      <div className='my-10 w-full h-full md:m-10 relative inline-block md:flex items-center justify-around'>
+      <div className='md:overflow-hidden my-10 w-full h-full md:m-10 relative inline-block md:flex items-center justify-around'>
         <div className='h-3/4 md:h-2/3 md:w-1/2 m-auto border-solid border-2 border-black rounded-2xl mx-4'>
 
         </div>
