@@ -5,6 +5,8 @@ import {motion} from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import CanvasScene from '../components/CanvasScene'
 import GrabSlider from '../components/Sliders/GrabSlider'
+import VideoSlider from '../components/Sliders/VideoSlider'
+
 import Contact from '../components/Contact'
 
 const Home = () => {
@@ -71,9 +73,25 @@ const Home = () => {
       </div>
 
       {/* Projects */}
-      <div className='md:overflow-hidden my-10 w-full h-full md:m-10 relative inline-block md:flex items-center justify-around'>
-        <div className='h-3/4 md:h-2/3 md:w-1/2 m-auto border-solid border-2 border-portfolio-gray rounded-2xl mx-4'>
+      <div className='md:overflow-hidden my-10 w-full h-full md:m-10 relative inline-block md:flex items-center justify-center'>
+        <div className='h-3/4 md:h-2/3 md:w-1/2 m-auto border-solid border-2 border-portfolio-gray rounded-2xl mx-4 grid-cols-4 grid-rows-4'>
 
+          <div className=' box-border rounded-2xl overflow-hidden'>
+            <VideoSlider/>
+          </div>
+
+          <div className='box-border rounded-2xl overflow-hidden'>
+            <VideoSlider/>
+          </div>
+
+          <div className='box-border rounded-2xl overflow-hidden'>
+            <VideoSlider/>
+          </div>
+
+          <div className='box-border rounded-2xl overflow-hidden'>
+            <VideoSlider/>
+          </div>
+          
         </div>
         <div className='px-5 h-3/4 text-center md:h-2/3 md:w-1/2 m-auto'>
           <h3 className='text-2xl text-center'>Projects</h3>

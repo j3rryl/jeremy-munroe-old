@@ -1,0 +1,14 @@
+.custom-swiper-slide {
+    margin: 0 auto;
+    border-radius: 14px;
+    width: 100%;
+    height: 100%;
+}   
+.custom-swiper-slide {
+  background: none !important;
+}
+
+.swiper-slide video-player {
+  width: 100%;
+  height: 100%;
+}
