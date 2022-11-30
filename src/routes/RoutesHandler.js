@@ -9,7 +9,7 @@ const RoutesHandler = () => {
     const location=useLocation()
     console.log(location)
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence mode='wait'>
     <Routes location={location} key={location.pathname}>
       <Route path='/' element={<Splash />}/>
       <Route path='/portfolio' element={<Splash />}/>

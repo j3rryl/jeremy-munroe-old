@@ -74,21 +74,21 @@ const Home = () => {
 
       {/* Projects */}
       <div className='md:overflow-hidden my-10 w-full h-full md:m-10 relative inline-block md:flex items-center justify-center'>
-        <div className='h-3/4 md:h-2/3 md:w-1/2 m-auto border-solid border-2 border-portfolio-gray rounded-2xl mx-4 grid-cols-4 grid-rows-4'>
+        <div className='md:grid md:grid-cols-2 h-fit mx-4 md:h-2/3 md:w-1/2'>
 
-          <div className=' box-border rounded-2xl overflow-hidden'>
+          <div className='m-5 rounded-2xl overflow-hidden'>
             <VideoSlider/>
           </div>
 
-          <div className='box-border rounded-2xl overflow-hidden'>
+          <div className='m-5 rounded-2xl overflow-hidden'>
             <VideoSlider/>
           </div>
 
-          <div className='box-border rounded-2xl overflow-hidden'>
+          <div className='m-5 rounded-2xl overflow-hidden'>
             <VideoSlider/>
           </div>
 
-          <div className='box-border rounded-2xl overflow-hidden'>
+          <div className='m-5 rounded-2xl overflow-hidden'>
             <VideoSlider/>
           </div>
           

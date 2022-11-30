@@ -4,7 +4,7 @@ import { Canvas} from '@react-three/fiber'
 import { Preload } from '@react-three/drei';
 
 
-const CanvasScene = ({children, gl, dpr}) => {
+const CanvasScene = ({children, gl, dpr, orthographic}) => {
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
     setIsMounted(true);
@@ -13,7 +13,7 @@ const CanvasScene = ({children, gl, dpr}) => {
   <>
     { !isMounted ? null : (
       <Suspense fallback={<div>Loading...</div>}>
-        <Canvas gl={gl} dpr={dpr}>
+        <Canvas gl={gl} dpr={dpr} orthographic={orthographic}>
           {children}
           <Preload />
         </Canvas>
