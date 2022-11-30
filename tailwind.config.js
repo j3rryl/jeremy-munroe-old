@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'caveat': ['Caveat', 'cursive']
+
+      },
       colors: {
         'portfolio-gray': '#e6e6e6',
       },
