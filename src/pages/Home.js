@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import CanvasScene from '../components/CanvasScene'
 import GrabSlider from '../components/Sliders/GrabSlider'
-import Footer from '../components/Footer'
+import Contact from '../components/Contact'
 
 const Home = () => {
   const navigate=useNavigate()
@@ -86,8 +86,8 @@ const Home = () => {
           </button>
         </div>
       </div>
-        {/* Footer */}
-        <Footer/>
+        {/* Contact */}
+        <Contact/>
 
     </div>
     </motion.div>
