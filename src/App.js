@@ -1,4 +1,3 @@
-import './App.css';
 import "swiper/css/bundle";
 
 import RoutesHandler from './routes/RoutesHandler';
