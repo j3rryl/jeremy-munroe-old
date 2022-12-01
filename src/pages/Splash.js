@@ -25,9 +25,9 @@ const Splash = () => {
       </div>
       <div className='w-full h-full m-auto text-center flex justify-center items-center'>
         <div className='w-fit inline-block justify-around items-center'>
-          <h1 className='my-4 tracking-[.35em] text-center text-3xl font-caveat'>Jeremy Munroe</h1>
-          <h1 className='my-4 tracking-[.35em] text-center text-3xl font-caveat'>UI/UX Developer</h1>
-          <button className='explore px-10 py-5 text-base my-8 mx-auto text-center h-fit w-fit' 
+          <h1 className='my-4 mx-5 tracking-[.35em] text-center text-3xl font-caveat'>Jeremy Munroe</h1>
+          <h1 className='my-4 mx-5 tracking-[.35em] text-center text-3xl font-caveat'>UI/UX Developer</h1>
+          <button className='explore px-10 py-5 text-2xl font-caveat font-extrabold my-8 mx-auto text-center h-fit w-fit' 
           onClick={()=>{navigate('/home')}}>
           Explore
           </button>
