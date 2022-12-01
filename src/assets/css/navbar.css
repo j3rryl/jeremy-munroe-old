@@ -1,20 +1,7 @@
-:root {
-	--mainColor: #29335c;
-	--mainColorLight: #5767aa;
-	--secondaryColor: #db2b39;
-	--textColor: #eee;
+header{
+	/* background: hsl(0 0% 100% / 0.1); */
+	/* backdrop-filter: blur(1rem); */
 }
-
-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 80px;
-	padding: 0 2rem;
-	background-color: var(--mainColor);
-	color: var(--textColor);
-}
-
 nav a {
 	margin: 0 1rem;
 	color: var(--textColor);
@@ -25,32 +12,18 @@ nav a:hover {
 	color: var(--secondaryColor);
 }
 
-header .nav-btn {
-	padding: 5px;
+.nav-btn {
 	cursor: pointer;
 	background: transparent;
 	border: none;
 	outline: none;
 	color: var(--textColor);
-	visibility: hidden;
-	opacity: 0;
-	font-size: 1.8rem;
 }
 
-header div,
-nav {
-	display: flex;
-	align-items: center;
-}
-
-@media only screen and (max-width: 1024px) {
-	header .nav-btn {
-		visibility: visible;
-		opacity: 1;
-	}
-
+@media only screen and (max-width: 640px) {
 	header nav {
 		position: fixed;
+		z-index: 10;
 		top: 0;
 		left: 0;
 		height: 100%;
@@ -65,17 +38,7 @@ nav {
 		transform: translateY(-100vh);
 	}
 
-	header .responsive_nav {
+	header .responsive_navbar {
 		transform: none;
-	}
-
-	nav .nav-close-btn {
-		position: absolute;
-		top: 2rem;
-		right: 2rem;
-	}
-
-	nav a {
-		font-size: 1.5rem;
 	}
 }
