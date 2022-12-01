@@ -16,9 +16,9 @@ const RoutesHandler = () => {
     <Routes location={location} key={location.pathname}>
       <Route path='/' element={<Splash />}/>
       <Route path='/jeremy-munroe' element={<Splash />}/>
-      <Route path='/home' element={<Home />}/>
-      <Route path='/about' element={<About />}/>
-      <Route path='/projects' element={<Projects />}/>
+      <Route path='/jeremy-munroe/home' element={<Home />}/>
+      <Route path='/jeremy-munroe/about' element={<About />}/>
+      <Route path='/jeremy-munroe/projects' element={<Projects />}/>
       {/* <Route path='/cases' element={<Cases />}/>
       <Route path='/contact' element={<Contact />}/> */}
     </Routes>

@@ -28,7 +28,7 @@ const Splash = () => {
           <h1 className='my-4 mx-5 tracking-[.35em] text-center text-3xl font-caveat'>Jeremy Munroe</h1>
           <h1 className='my-4 mx-5 tracking-[.35em] text-center text-3xl font-caveat'>UI/UX Developer</h1>
           <button className='explore px-10 py-5 text-2xl font-caveat font-extrabold my-8 mx-auto text-center h-fit w-fit' 
-          onClick={()=>{navigate('/home')}}>
+          onClick={()=>{navigate('/jeremy-munroe/home')}}>
           Explore
           </button>
         </div>
