@@ -21,7 +21,7 @@ const Projects = () => {
       <CanvasScene children={<StarScene/>}/>
       </div>
       <div>
-        Projects
+        Development In Progress Stay Tuned.
       </div>
     </div>
     </motion.div>
