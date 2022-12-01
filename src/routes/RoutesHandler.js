@@ -3,6 +3,7 @@ import { AnimatePresence } from 'framer-motion'
 import Splash from '../pages/Splash'
 import Home from '../pages/Home'
 import About from '../pages/About'
+import Navbar from '../components/Navbar'
 
 const RoutesHandler = () => {
     const location=useLocation()
@@ -14,6 +15,7 @@ const RoutesHandler = () => {
       <Route path='/portfolio' element={<Splash />}/>
       <Route path='/home' element={<Home />}/>
       <Route path='/about' element={<About />}/>
+      <Route path='/nav' element={<Navbar />}/>
       {/* <Route path='/projects' element={<Projects />}/>
       <Route path='/cases' element={<Cases />}/>
       <Route path='/contact' element={<Contact />}/> */}
