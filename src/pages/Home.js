@@ -50,17 +50,17 @@ const Home = () => {
 
       {/* About Me */}
       <div className='my-10 w-full h-full md:m-10 relative inline-block md:flex items-center justify-around'>
-        <div className='md:hidden overflow-hidden h-3/4 w-full md:h-2/3 md:w-1/2 m-auto relative'>
+        <div className='md:hidden md:mb-0 mb-10 overflow-hidden h-3/4 w-full md:h-2/3 md:w-1/2 m-auto relative'>
           <GrabSlider sliderStyle='w-3/5 top-0 bottom-0 left-0 right-0 h-full absolute'/>
         </div>
 
-      <div className='px-5 h-3/4 text-center md:h-2/3 md:w-1/2 m-auto md:mt-0 mt-10'>
+      <div className='px-5 h-3/4 text-center md:h-2/3 md:w-1/2 m-auto'>
         <h3 className='text-2xl text-center'>About Me</h3>
         <hr className='bg-portfolio-gray my-6 h-0.5' />
         <p className='text-black text-center tracking-widest'>
         Education, hobbies and all past work experiences here.
         </p>
-        <button className='explore px-10 py-5 text-base my-8 mx-auto text-center h-fit w-fit' onClick={()=>{
+        <button className='explore md:!border-none px-10 py-5 text-base my-8 mx-auto text-center h-fit w-fit' onClick={()=>{
           navigate('/home')
         }}>
           Read More
@@ -74,7 +74,7 @@ const Home = () => {
 
       {/* Projects */}
       <div className='md:overflow-hidden my-10 w-full h-full md:m-10 relative inline-block md:flex items-center justify-center'>
-        <div className='md:grid md:grid-cols-2 h-fit mx-4 md:h-2/3 md:w-1/2'>
+        <div className='md:mb-0 mb-10 md:grid md:grid-cols-2 h-fit mx-4 md:h-2/3 md:w-1/2'>
 
           <div className='m-5 rounded-2xl overflow-hidden'>
             <VideoSlider/>
@@ -93,13 +93,13 @@ const Home = () => {
           </div>
           
         </div>
-        <div className='px-5 h-3/4 text-center md:h-2/3 md:w-1/2 m-auto md:mt-0 mt-10'>
+        <div className='px-5 h-3/4 text-center md:h-2/3 md:w-1/2 m-auto'>
           <h3 className='text-2xl text-center'>Projects</h3>
           <hr className='bg-portfolio-gray my-6 h-0.5'/>
           <p className='text-black text-center tracking-widest'>
             Ongoing work and previous works.
           </p>
-          <button className='explore px-10 py-5 text-base my-8 mx-auto text-center h-fit w-fit'>
+          <button className='explore md:!border-none px-10 py-5 text-base my-8 mx-auto text-center h-fit w-fit'>
             View All
           </button>
         </div>
