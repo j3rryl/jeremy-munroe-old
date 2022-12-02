@@ -60,7 +60,7 @@ const Home = () => {
         <p className='text-black text-center tracking-widest'>
         Education, hobbies and all past work experiences here.
         </p>
-        <button className='explore md:!border-none px-10 py-5 text-base my-8 mx-auto text-center h-fit w-fit' onClick={()=>{
+        <button className='explore px-10 py-5 text-base my-8 mx-auto text-center h-fit w-fit' onClick={()=>{
           navigate('/home')
         }}>
           Read More
@@ -99,7 +99,7 @@ const Home = () => {
           <p className='text-black text-center tracking-widest'>
             Ongoing work and previous works.
           </p>
-          <button className='explore md:!border-none px-10 py-5 text-base my-8 mx-auto text-center h-fit w-fit'>
+          <button className='explore px-10 py-5 text-base my-8 mx-auto text-center h-fit w-fit'>
             View All
           </button>
         </div>
