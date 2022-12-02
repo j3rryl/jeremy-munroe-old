@@ -9,9 +9,9 @@ import corel from '../assets/images/about/corel.webp'
 import datae from '../assets/images/about/data.webp'
 import assis from '../assets/images/about/assis.webp'
 import nema from '../assets/images/about/nema.jpg'
-import Skillset from '../components/Skillset'
 import CanvasScene from '../components/CanvasScene'
 import FadeSlider from '../components/Sliders/FadeSlider';
+import WordSphere from '../components/WebSphere/WordSphere';
 
 const About = () => {
   const StarScene = lazy(() => import('../components/Stars'));
@@ -108,7 +108,7 @@ const About = () => {
   <hr className='bg-portfolio-gray my-6 h-0.5 mx-5 w-1/2'/>
       <div className='mx-5 h-screen md:overflow-hidden md:m-10 relative inline-block md:flex items-center justify-around'>
         <div className='md:mb-0 mb-10 h-full md:w-1/2 m-auto'>
-        <Skillset />
+        <WordSphere />
         </div>
       </div>
 

@@ -10,7 +10,7 @@ function Navbar() {
     useEffect(() => {
       //Checks if location.pathname is not "/".
 	  location.pathname==="/"||location.pathname==="/jeremy-munroe"||location.pathname==="/jeremy-munroe/"?setInIndex(true):setInIndex(false)
-    }, [inIndex]);
+    }, [location.pathname, inIndex]);
 	const navRef = useRef();
 	const showNavbar = () => {
 		navRef.current.classList.toggle("responsive_navbar");

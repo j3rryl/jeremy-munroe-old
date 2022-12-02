@@ -21,7 +21,7 @@ const FadeSlider = ({urls}) => {
       >
         {urls.map((urlNumber)=>
             <SwiperSlide key={urlNumber}>
-            <img className='h-full rounded-2xl' src={urlNumber} />
+            <img className='h-full rounded-2xl' src={urlNumber} alt='Sliders for different images.'/>
           </SwiperSlide>
         )}
       </Swiper>
