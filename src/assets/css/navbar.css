@@ -32,8 +32,8 @@ nav a.active{
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		/* background-color: var(--mainColor);
-		backdrop-filter: blur(.7rem); */
+		background-color: var(--mainColor);
+		backdrop-filter: blur(.7rem);
 		background: hsl(0 0% 100% / 0.1);
 		transition: 1s;
 		transform: translateY(-100vh);
