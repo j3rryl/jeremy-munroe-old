@@ -13,12 +13,6 @@ import Skillset from '../components/Skillset'
 import CanvasScene from '../components/CanvasScene'
 import FadeSlider from '../components/Sliders/FadeSlider';
 
-
-
-
-
-
-
 const About = () => {
   const StarScene = lazy(() => import('../components/Stars'));
   return (
@@ -110,7 +104,7 @@ const About = () => {
       </div>
 
   {/* Skills */}
-  <h3 className=' text-black text-3xl text-left ml-10 mt-24'>Skills</h3>
+  <h3 className='text-black text-3xl text-left ml-10 mt-24'>Skills</h3>
   <hr className='bg-portfolio-gray my-6 h-0.5 mx-5 w-1/2'/>
       <div className='mx-5 h-screen md:overflow-hidden md:m-10 relative inline-block md:flex items-center justify-around'>
         <div className='md:mb-0 mb-10 h-full md:w-1/2 m-auto'>
