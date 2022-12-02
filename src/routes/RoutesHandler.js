@@ -1,5 +1,4 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
-import { useState, useEffect } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import Splash from '../pages/Splash'
 import Home from '../pages/Home'
