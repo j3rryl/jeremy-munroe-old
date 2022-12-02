@@ -1,6 +1,5 @@
 import '../../assets/css/fadeslider.css'
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import { EffectFade, Autoplay, Navigation, Pagination } from "swiper";
 
 const FadeSlider = ({urls}) => {
@@ -20,7 +19,7 @@ const FadeSlider = ({urls}) => {
         className="mySwiper h-full"
       >
         {urls.map((urlNumber)=>
-            <SwiperSlide key={urlNumber}>
+            <SwiperSlide className='!w-full !h-full !bg-none' key={urlNumber}>
             <img className='h-full rounded-2xl' src={urlNumber} alt='Sliders for different images.'/>
           </SwiperSlide>
         )}
