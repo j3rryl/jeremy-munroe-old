@@ -11,7 +11,6 @@ function Navbar() {
       //Checks if location.pathname is not "/".
 	  location.pathname==="/"||location.pathname==="/jeremy-munroe"||location.pathname==="/jeremy-munroe/"?setInIndex(true):setInIndex(false)
     }, [inIndex]);
-	console.log(location.pathname)
 	const navRef = useRef();
 	const showNavbar = () => {
 		navRef.current.classList.toggle("responsive_navbar");
@@ -21,9 +20,9 @@ function Navbar() {
 		<header className={`${inIndex?'hidden':'visible'} h-20 w-full px-8 z-10 bg-white flex items-center justify-between`}>
 			<h3 className='font-caveat text-2xl'>Jeremy Munroe</h3>
 			<nav ref={navRef} className='flex items-center text-2xl sm:text-xl font-caveat'>
-				<Link to='/home'>Home</Link>
-				<Link to='/about'>About</Link>
-        		<Link to='/projects'>Case Studies</Link>
+				<Link to='/jeremy-munroe/home'>Home</Link>
+				<Link to='/jeremy-munroe/about'>About</Link>
+        		<Link to='/jeremy-munroe/projects'>Case Studies</Link>
 				<button
 					className="nav-btn sm:hidden visible p-1 text-3xl absolute top-10 right-10"
 					onClick={showNavbar}>
