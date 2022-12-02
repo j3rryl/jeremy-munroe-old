@@ -34,9 +34,7 @@ const Home = () => {
 
       <div className='mx-5 h-full md:overflow-hidden md:m-10 relative inline-block md:flex items-center justify-around'>
         <div className='h-3/4 md:h-2/3 md:w-1/2 m-auto'>
-          {/* <Pages /> */}
           <CanvasScene children={<GalleryScene/>} gl={{ antialias: false }} dpr={[1, 1.5]} />
-          {/* <GalleryScene/> */}
         </div>
         <div className='px-5 md:h-2/5 md:w-2/5 m-auto border-none'>
           <h3 className=' text-2xl text-center'>Website and User Interface Design</h3>
@@ -66,7 +64,7 @@ const Home = () => {
           Read More
         </button>
       </div>
-      <div className=' hidden overflow-hidden md:flex h-3/4 mx-1 md:h-2/3 md:w-1/2 m-auto'>
+      <div className='hidden overflow-hidden md:flex h-3/4 mx-1 md:h-2/3 md:w-1/2 m-auto'>
       <GrabSlider sliderStyle='md:w-3/5 lg:w-2/5 h-11/12 relative m-auto'/>
       </div>
       

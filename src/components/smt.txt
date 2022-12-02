@@ -1,44 +1,39 @@
-import '../../assets/css/video.css'
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Autoplay, Navigation, Pagination } from "swiper";
-import VideoPlayer from '../Video/VideoPlayer';
-import sample from '../../assets/images/10.mp4'
-import CanvasScene from '../CanvasScene';
-import { Html } from '@react-three/drei';
+{/* Education */}
+      <div className='education-tab'>
+        <div className='edu-tab'>
+        <h3 className='edu-title'>Education</h3>
+        <hr />
+        </div>
+        <div className='schools'>
+          <div className='starehe'>
+            <div className='starehe-image'>
+            {/* <img className='starch-img' src={starch}/> */}
+            </div>
+            <div className='starehe-details'>
+              <h4>Starehe Boys' Centre and School</h4>
+              <p>Start Date: 2nd Feb 2016</p>
+              <p>End Date Date: 16th November 2016</p>
+              <p>Certification: KCSE</p>
+              <p>Grade: A-</p>
+            </div>
+            <div className='back-photo'>
 
+            </div>
+          </div>
+          <div className='strathmore'>
+            <div className='strath-image'>
+              {/* <img src={strath} className='strath-img'/> */}
+            </div>
+            <div className='strath-details'>
+            <h4>Strathmore University</h4>
+            <p>Start Date: 4th July 2020</p>
+            <p>End Date Date: 16th July 2024</p>
+            <p>Certification: Working progress</p>
+            <p>Grade: A-</p>
+            </div>
+            <div className='back-photo'>
 
-const VideoSlider = () => {
-  return (
-    <CanvasScene className='video-slider' orthographic>
-        <Html as='div'>
-<Swiper
-        spaceBetween={30}
-        effect={"fade"}
-        navigation={false}
-        pagination={{
-            clickable: true,
-        }}
-        modules={[EffectFade, Navigation, Pagination, Autoplay]}
-        autoplay={{
-            delay: 20000,
-            disableOnInteraction: false
-        }}
-    loop={true}
-    className="mySwiper"
-    >
-    <SwiperSlide className='custom-swiper-slide'>
-    
-        <VideoPlayer className='video-player' videoSource={sample}/>
-    </SwiperSlide>
-
-    <SwiperSlide className='custom-swiper-slide'>          
-        <VideoPlayer className='video-player' videoSource={sample}/>
-    </SwiperSlide>
-
-    </Swiper>
-    </Html>
-    </CanvasScene>
-  )
-}
-
-export default VideoSlider
+            </div>
+           </div>
+        </div>
+      </div>

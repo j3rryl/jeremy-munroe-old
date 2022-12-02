@@ -1,52 +1,147 @@
-
-.starehe{
-    
-    box-shadow: 0 0 30px 1px #000;
-    transform: scale(0.99);
-    .back-photo{
-        height: 100%;
+.about-page{
+    width: 100vw;
+    height:100vh;
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    .canvas{
         width: 100%;
-        background-image: url('../images/logo/starehe.jpg');
-        background-repeat: no-repeat;
-        position: absolute;
-        bottom: 0;
-        // background-position: center;
-        // background-size: cover;
-        background-size: contain;
-        border-radius: 14px;
-        padding: 1vh 0;
-        transition: 1s;
-    }
-}
-.starehe:hover .back-photo{
-    transform: scale(0.45, 0.3) translateY(-150%);
-    border-radius: 25%;
-}
-      
-.strathmore{
-    box-shadow: 0 0 30px 1px #000;
-    transform: scale(0.99);
-    .back-photo{
         height: 100%;
-        width: 100%;
-        background-image: url('../images/logo/strath.png');
-        background-repeat: no-repeat;
+        position: fixed;
         background-color: #fff;
-        position: absolute;
-        bottom: 0;
-        background-position: center;
-        background-size: contain;
-        // background-size: 20% 100%;
-        transition: 1s;
-    }
+      }
+    .education-tab{
+    width: 100%;
+    height:100%;
+    background-color: #fff;
 
-}
+    .edu-tab{
+        margin-left: 6vw;
+        width: 25%;
+        height: fit-content;
+        
+        .edu-title{
+            text-align: center;
+            letter-spacing: .2em;
+            background-color: #fff;
+            position: relative;
+            color: #000;
+        }
+        hr{
+            background-color: #000;
+            position: relative;
+
+            // background-color: #fff;
+
+        }
+    }
+    
+    .schools{
+        width: 70%;
+        height: 75%;
+        margin: 5vh auto;
+        position: relative;
+        border-radius: 14px;
+        // border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1vw;
+        box-shadow: #000;
+        .starehe{
+            width: 30%;
+            height: 75%;
+            border-radius: 14px;
+            background-color: #fff;
+            // border: 1px solid black;
+            padding: 1vh 0;
+            box-shadow: 0 0 30px 1px #000;
+            transform: scale(0.99);
+            .starehe-image{
+                // border: 1px solid black;
+                margin: 1vh auto;
+                width: 20%;
+                height: 10%;
+                .starch-img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .starehe-details{
+                // border: 1px solid black;
+                margin: 0 auto;
+                width: 100%;
+                height: 60%;
+                text-align: center;
+            }
+            .back-photo{
+                height: 100%;
+                width: 100%;
+                background-image: url('../images/logo/starehe.jpg');
+                background-repeat: no-repeat;
+                position: absolute;
+                bottom: 0;
+                // background-position: center;
+                // background-size: cover;
+                background-size: 100% 100%;
+                border-radius: 14px;
+                padding: 1vh 0;
+                transition: 1s;
+            }
+        }
+        .starehe:hover .back-photo{
+            transform: scale(0.45, 0.3) translateY(-150%);
+            border-radius: 25%;
+        }
+        .strathmore{
+            width: 30%;
+            height: 75%;
+            border-radius: 14px;
+            background-color: #fff;
+            // border: 1px solid black;
+            box-shadow: 0 0 30px 1px #000;
+            transform: scale(0.99);
+
+            .strath-image{
+                // border: 1px solid black;
+                margin: 1vh auto;
+                width: 20%;
+                height: 10%;
+                .strath-img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .strath-details{
+                // border: 1px solid black;
+                margin: 0 auto;
+                width: 100%;
+                height: 60%;
+                text-align: center;
+            }
+            .back-photo{
+                height: 100%;
+                width: 100%;
+                background-image: url('../images/logo/strath.png');
+                background-repeat: no-repeat;
+                background-color: #fff;
+                position: absolute;
+                bottom: 0;
+                background-position: center;
+                background-size: contain;
+                // background-size: 20% 100%;
+                border-radius: 14px;
+                padding: 1vh 0;
+                transition: 1s;
+            }
+
+        }
         .strathmore:hover .back-photo{
             transform: scale(0.45, 0.3) translateY(-150%);
             border-radius: 25%;
         }
-
-    
+    }
+    }
     .work-experience{
         width: 100vw;
         height: 100vh;
@@ -240,5 +335,5 @@
         }
     }
     
-
+}
 
