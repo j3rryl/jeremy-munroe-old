@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
 :root {
 	--mainColor: #fff;
+  --textColor: #000;
 	--mainColorLight: #5767aa;
 	--secondaryColor: #db2b39;
-	--textColor: #000;
 }
 html,body,#root{
   margin: 0;
