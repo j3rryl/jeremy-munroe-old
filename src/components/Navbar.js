@@ -9,7 +9,7 @@ function Navbar() {
     const location=useLocation()
     useEffect(() => {
       //Checks if location.pathname is not "/".
-	  location.pathname==="/"||location.pathname==="/jeremy-munroe"?setInIndex(true):setInIndex(false)
+	  location.pathname==="/"||location.pathname==="/jeremy-munroe"||location.pathname==="/jeremy-munroe/"?setInIndex(true):setInIndex(false)
     }, [inIndex]);
 	console.log(location.pathname)
 	const navRef = useRef();
