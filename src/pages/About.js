@@ -25,7 +25,7 @@ const About = () => {
       <h3 className=' text-black text-3xl text-left ml-10'>Education</h3>
       <hr className='bg-portfolio-gray my-5 h-0.5 mx-5 w-3/4 md:w-1/2'/>
       <div className='m-auto p-16 text-center h-fit md:m-10 md:flex md:overflow-hidden relative inline-block items-center justify-center'>
-          <div className='starehe md:w-fit p-16 rounded-2xl'>
+          <div className='starehe md:mx-4 md:w-fit p-16 rounded-2xl'>
             <div className='text-center'>
               <h4>Starehe Boys' Centre and School</h4>
               <p>Start Date: 2nd Feb 2016</p>
@@ -37,7 +37,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className='strathmore md:w-fit p-16 rounded-2xl'>
+          <div className='strathmore md:mx-4 md:w-fit p-16 rounded-2xl'>
             <div className='text-center'>
             <h4>Strathmore University</h4>
             <p>Start Date: 4th July 2020</p>
