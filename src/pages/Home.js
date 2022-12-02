@@ -54,7 +54,7 @@ const Home = () => {
           <GrabSlider sliderStyle='w-3/5 top-0 bottom-0 left-0 right-0 h-full absolute'/>
         </div>
 
-      <div className='px-5 h-3/4 text-center md:h-2/3 md:w-1/2 m-auto'>
+      <div className='px-5 h-3/4 text-center md:h-2/3 md:w-1/2 m-auto md:mt-0 mt-10'>
         <h3 className='text-2xl text-center'>About Me</h3>
         <hr className='bg-portfolio-gray my-6 h-0.5' />
         <p className='text-black text-center tracking-widest'>
@@ -93,7 +93,7 @@ const Home = () => {
           </div>
           
         </div>
-        <div className='px-5 h-3/4 text-center md:h-2/3 md:w-1/2 m-auto'>
+        <div className='px-5 h-3/4 text-center md:h-2/3 md:w-1/2 m-auto md:mt-0 mt-10'>
           <h3 className='text-2xl text-center'>Projects</h3>
           <hr className='bg-portfolio-gray my-6 h-0.5'/>
           <p className='text-black text-center tracking-widest'>
