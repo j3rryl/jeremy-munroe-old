@@ -12,7 +12,6 @@ import nema from '../assets/images/about/nema.jpg'
 import CanvasScene from '../components/CanvasScene'
 import FadeSlider from '../components/Sliders/FadeSlider';
 import WordSphere from '../components/WebSphere/WordSphere';
-import Test from '../tests/Test';
 import Tabs from '../components/Tabs/Tabs';
 
 const About = () => {
