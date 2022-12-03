@@ -5,6 +5,7 @@ import Home from '../pages/Home'
 import Projects from '../pages/Projects'
 import About from '../pages/About'
 import Navbar from '../components/Navbar'
+import Test from '../tests/Test'
 
 const RoutesHandler = () => {
     const location=useLocation()
@@ -18,6 +19,7 @@ const RoutesHandler = () => {
       <Route path='/jeremy-munroe/home' element={<Home />}/>
       <Route path='/jeremy-munroe/about' element={<About />}/>
       <Route path='/jeremy-munroe/projects' element={<Projects />}/>
+      <Route path='/jeremy-munroe/tests' element={<Test />}/>
       {/* <Route path='/cases' element={<Cases />}/>
       <Route path='/contact' element={<Contact />}/> */}
     </Routes>
