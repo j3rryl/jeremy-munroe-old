@@ -11,7 +11,15 @@ export default function Tabs() {
         <TabContext value={value}>
             <Box sx={{borderBottom:1, borderColor: 'divider'}}>
                 <TabList aria-label="Tabs example" onChange={handleChange}
-                textColor='secondary' indicatorColor="secondary" centered>
+                centered 
+                sx={{
+                    "& button.Mui-selected": { color:"#db2b39" },
+                  }}
+                TabIndicatorProps={{
+                    style: {
+                      backgroundColor: "#db2b39"
+                    }
+                  }}>
                     <Tab label='High School' value='1'/> 
                     <Tab label='University' value='2'/>
                 </TabList>
