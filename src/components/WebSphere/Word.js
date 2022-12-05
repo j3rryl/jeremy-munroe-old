@@ -19,7 +19,7 @@ export default function Word({children, ...props}) {
       // Make text face the camera
       ref.current.quaternion.copy(camera.quaternion)
       // Animate font color
-      ref.current.material.color.lerp(color.set(hovered ? '#fa2720' : 'white'), 0.1)
+      ref.current.material.color.lerp(color.set(hovered ? '#db2b39' : 'white'), 0.1)
     })
     return <Text ref={ref} onPointerOver={over} onPointerOut={out} onClick={() => console.log('clicked')} {...props} {...fontProps} children={children} />
 }
