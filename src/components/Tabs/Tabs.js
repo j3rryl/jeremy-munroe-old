@@ -38,7 +38,7 @@ export default function Tabs() {
             <h4>Strathmore University</h4>
             <p>Start Date: 4th July 2020</p>
             <p>End Date Date: 16th July 2024</p>
-            <p>Certification: Working progress</p>
+            <p>Certification: Work In progress</p>
             <p>Grade: A-</p>
             </div>
             </TabPanel>
