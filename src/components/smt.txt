@@ -1,3 +1,11 @@
+<div className='md:mb-0 mb-10 md:grid md:grid-cols-2 h-fit mx-4 md:h-2/3 md:w-1/2'>
+
+          <div className='m-5 rounded-2xl overflow-hidden'>
+            <VideoSlider/>
+          </div>
+
+
+
 {/* Education */}
       <div className='education-tab'>
         <div className='edu-tab'>
