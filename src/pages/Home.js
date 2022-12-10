@@ -5,10 +5,10 @@ import {motion} from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import CanvasScene from '../components/CanvasScene'
 import GrabSlider from '../components/Sliders/GrabSlider'
-import laptop from '../assets/images/frames/laptop-frame.png'
+import ai from '../assets/images/about/ai.jpg'
+import ap from '../assets/images/about/ap.webp'
 
 import Contact from '../components/Contact'
-import FadeSlider from '../components/Sliders/FadeSlider'
 import WebSlider from '../components/Sliders/WebSlider'
 
 const Home = () => {
@@ -73,9 +73,9 @@ const Home = () => {
       </div>
 
       {/* Projects */}
-      <div className='md:overflow-hidden my-10 w-full h-fit md:h-full md:m-10 relative inline-block md:flex items-center justify-center'>
-        <div className='md:mb-0 mb-10 mx-4 h-fit md:h-2/3 md:w-1/2'>
-          <WebSlider urls={[0]}/>
+      <div className='md:overflow-hidden my-10 w-full h-full md:m-10 relative inline-block md:flex items-center justify-center'>
+        <div className='md:mb-0 mb-10 mx-4 h-full md:h-2/3 md:w-1/2'>
+          <WebSlider urls={[ai,ap]}/>
         </div>
         <div className='px-5 h-3/4 text-center md:h-2/3 md:w-1/2 m-auto'>
           <h3 className='text-2xl text-center'>Projects</h3>

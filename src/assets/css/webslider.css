@@ -1,0 +1,38 @@
+
+  .swiper-slide {
+    /* width: 100% !important;
+    height: 100% !important;
+    background: none !important; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .laptop-container{
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/frames/laptop-frame.png') !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    position: relative !important;
+    background-position: center !important;
+    background-size: contain !important;
+    min-height: 100%;
+  }
+  .custom-swiper-slide{
+    background-image: url('../images/frames/laptop-frame.png') !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    position: relative !important;
+    background-position: center !important;
+    background-size: contain !important;
+  }
+  @media only screen and (max-width: 640px) {
+	.custom-swiper-slide{
+    background-image: url('../images/frames/mobile-frame-2.png') !important;
+    background-size: contain !important;
+	}
+}
