@@ -12,35 +12,35 @@ const Contact = () => {
         <ul className='text-justify'>
           <li>
           <FontAwesomeIcon icon={faEnvelope} size='2x' className='f-icon email'/>
-          <a className='text-black tracking-widest' href='mailto:jeremymunroe0@gmail.com' target='_blank'
+          <a className='tracking-widest' href='mailto:jeremymunroe0@gmail.com' target='_blank'
           rel="noopener noreferrer">
           Email
           </a>
           </li>
           <li>
           <FontAwesomeIcon icon={faLinkedin} size='2x' className='f-icon linkedin'/>
-          <a className='text-black tracking-widest' href='https://www.linkedin.com/in/jeremy-munroe-b5ab711a4/' target='_blank'
+          <a className='tracking-widest' href='https://www.linkedin.com/in/jeremy-munroe-b5ab711a4/' target='_blank'
           rel="noopener noreferrer">
           Linked In
           </a>
           </li>
           <li>
           <FontAwesomeIcon icon={faGithub} size='2x' className='f-icon github'/>
-          <a className='text-black tracking-widest' href='https://github.com/j3rryl' target='_blank'
+          <a className='tracking-widest' href='https://github.com/j3rryl' target='_blank'
           rel="noopener noreferrer">
           Github
           </a>
           </li>
           <li>
           <FontAwesomeIcon icon={faInstagram} size='2x' className='f-icon instagram'/>
-          <a className='text-black tracking-widest' href='https://instagram.com/_warsie' target='_blank'
+          <a className='tracking-widest' href='https://instagram.com/_warsie' target='_blank'
           rel="noopener noreferrer">
           Instagram
           </a>
           </li>
           <li>
           <FontAwesomeIcon icon={faTwitter} size='2x' className='f-icon twitter'/>
-          <a className='text-black tracking-widest' href='https://twitter.com/jeremymunroe0' target='_blank'
+          <a className='tracking-widest' href='https://twitter.com/jeremymunroe0' target='_blank'
           rel="noopener noreferrer">
           Twitter
           </a>

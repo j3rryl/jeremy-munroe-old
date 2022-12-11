@@ -6,13 +6,21 @@ import Projects from '../pages/Projects'
 import About from '../pages/About'
 import Navbar from '../components/Navbar'
 import Test from '../tests/Test'
+import CanvasScene from '../components/CanvasScene'
+import { lazy } from 'react'
+import { useRef } from 'react'
 
 const RoutesHandler = () => {
     const location=useLocation()
+    const StarScene = lazy(() => import('../components/Stars'));
+    const uniqueKey = useRef()
 
   return (
     <AnimatePresence mode='wait'>
       <Navbar />
+      <div className='w-full h-full fixed' key={uniqueKey}>
+      <CanvasScene children={<StarScene />} />
+      </div>
     <Routes location={location} key={location.pathname}>
       <Route path='/' element={<Splash />}/>
       <Route path='/jeremy-munroe' element={<Splash />}/>

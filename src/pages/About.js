@@ -1,5 +1,4 @@
 import '../assets/scss/about.scss'
-import { lazy } from 'react';
 import lab1 from '../assets/images/about/lab1.jpg'
 import lab2 from '../assets/images/about/lab2.jpg'
 import lab3 from '../assets/images/about/lab3.jpg'
@@ -9,27 +8,22 @@ import corel from '../assets/images/about/corel.webp'
 import datae from '../assets/images/about/data.webp'
 import assis from '../assets/images/about/assis.webp'
 import nema from '../assets/images/about/nema.jpg'
-import CanvasScene from '../components/CanvasScene'
 import FadeSlider from '../components/Sliders/FadeSlider';
 import WordSphere from '../components/WebSphere/WordSphere';
 import Tabs from '../components/Tabs/Tabs';
 
 const About = () => {
-  const StarScene = lazy(() => import('../components/Stars'));
   return (
     <div className='about-page md:overflow-x-hidden w-full h-fit bg-none'>
-      <div className='canvas w-full h-full fixed'>
-      <CanvasScene children={<StarScene />} />
-        </div>
-
+    
       {/* Education */}
-      <h3 className=' text-black text-3xl text-left ml-10'>Education</h3>
+      <h3 className='text-3xl text-left ml-10'>Education</h3>
       <hr className='bg-portfolio-gray my-5 h-0.5 mx-5 w-3/4 md:w-1/2'/>
       <div className='m-auto p-16 text-center h-fit md:m-10 md:flex md:overflow-hidden relative inline-block items-center justify-center'>
           <Tabs/>
       </div>
   {/* Work */}
-  <h3 className=' text-black text-3xl text-left ml-10 mt-24'>Work Experience</h3>
+  <h3 className='text-3xl text-left ml-10 mt-24'>Work Experience</h3>
   <hr className='bg-portfolio-gray my-6 h-0.5 mx-5 w-1/2'/>
       <div className=' mx-5 h-fit md:m-10 relative inline-block md:flex items-center justify-around'>
         <div className='md:mb-0 mb-10 h-fit w-full md:w-1/2 md:h-full m-auto'>
@@ -38,7 +32,7 @@ const About = () => {
       <div className='px-5 h-full md:w-1/2 m-auto'>
         <h3 className='text-2xl text-center'>Lab Assistant</h3>
         <hr className='bg-portfolio-gray my-6 h-0.5'/>
-        <ul className='text-black text-center tracking-widest'>
+        <ul className='text-center tracking-widest'>
         <li>I was responsible for the safe and orderly operation and functionality of a computer lab that was used by lecturers and students</li>
         <li>Maintained computer lab equipment worth a fortune.</li>
         <li>Streamlined processes within the lab to make usage more efficient and user-friendly.</li>
@@ -53,8 +47,8 @@ const About = () => {
             <div className='px-5 text-center h-full md:w-1/2 m-auto'>
               <h3 className='text-2xl text-center'>Attaché</h3>
               <hr className='bg-portfolio-gray my-6 h-0.5'/>
-              <p className='text-black text-center tracking-widest'>I provided office assistance by:</p>
-              <ul className='text-black text-center tracking-widest'>
+              <p className='text-center tracking-widest'>I provided office assistance by:</p>
+              <ul className='text-center tracking-widest'>
               <li>Maintaining files and dealing with other administrative support tasks.</li>
               <li>Answering phone calls and taking messages.</li>
               <li>Welcoming visitors to the office.</li>
@@ -75,7 +69,7 @@ const About = () => {
         <div className='px-5 h-full md:w-1/2 m-auto'>
           <h3 className='text-2xl text-center'>Graphic Design Intern</h3>
           <hr className='bg-portfolio-gray my-6 h-0.5'/>
-          <ul className=' text-black text-justify tracking-widest'>
+          <ul className='text-justify tracking-widest'>
           <li>I worked as Graphic Design Intern. </li>
           <li>Later I worked on the e-commerce website, Dezana Hub. I did basic maintenance such as ensuring products uploaded are up to date.</li>
           </ul>
@@ -83,7 +77,7 @@ const About = () => {
       </div>
 
   {/* Skills */}
-  <h3 className='text-black text-3xl text-left ml-10 mt-24'>Skills</h3>
+  <h3 className='text-3xl text-left ml-10 mt-24'>Skills</h3>
   <hr className='bg-portfolio-gray my-6 h-0.5 mx-5 w-1/2'/>
       <div className='mx-5 h-screen md:overflow-hidden md:m-10 relative inline-block md:flex items-center justify-around'>
         <div className='md:mb-0 mb-10 h-full md:w-1/2 m-auto'>

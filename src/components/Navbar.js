@@ -17,7 +17,7 @@ function Navbar() {
 	};
 
 	return (
-		<header className={`${inIndex?'hidden':'visible'} h-20 w-full px-8 z-10 bg-white flex items-center justify-between`}>
+		<header className={`${inIndex?'hidden':'visible'} h-20 w-full px-8 z-10 flex items-center justify-between`}>
 			<h3 className='font-caveat text-2xl'>Jeremy Munroe</h3>
 			<nav ref={navRef} className='flex items-center text-2xl sm:text-xl font-caveat'>
 				<NavLink to='/jeremy-munroe/home'>Home</NavLink>

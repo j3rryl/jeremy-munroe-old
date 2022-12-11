@@ -9,5 +9,5 @@
     border-radius: 18px;
     font-size: 22px;
     font-weight: bold;
-    color: #fff;
+    color: var(--mainColor);
   }

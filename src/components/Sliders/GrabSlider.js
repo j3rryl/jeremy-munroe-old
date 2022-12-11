@@ -21,10 +21,10 @@ const GrabSlider = ({sliderStyle}) => {
         // loop={true}
         className={sliderStyle}
       >
-        <SwiperSlide>Work</SwiperSlide>
-        <SwiperSlide>Education</SwiperSlide>
-        <SwiperSlide>Hobbies</SwiperSlide>
-        <SwiperSlide>Skills</SwiperSlide>
+        <SwiperSlide><p className='!text-white'>Work</p></SwiperSlide>
+        <SwiperSlide><p className='!text-white'>Education</p></SwiperSlide>
+        <SwiperSlide><p className='!text-white'>Hobbies</p></SwiperSlide>
+        <SwiperSlide><p className='!text-white'>Skills</p></SwiperSlide>
         <SwiperSlide></SwiperSlide>
       </Swiper>
   )
