@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jeremy-munroe/static/css/main.6c7db6c1.css",
-    "main.js": "/jeremy-munroe/static/js/main.6bdd5b67.js",
+    "main.css": "/jeremy-munroe/static/css/main.eff2d3e5.css",
+    "main.js": "/jeremy-munroe/static/js/main.44b238c9.js",
     "static/js/313.2910ef09.chunk.js": "/jeremy-munroe/static/js/313.2910ef09.chunk.js",
     "static/js/879.41847149.chunk.js": "/jeremy-munroe/static/js/879.41847149.chunk.js",
     "static/js/787.a8b4d0d5.chunk.js": "/jeremy-munroe/static/js/787.a8b4d0d5.chunk.js",
@@ -32,15 +32,16 @@
     "static/media/cpp.webp": "/jeremy-munroe/static/media/cpp.51f19c131560cb11edca.webp",
     "index.html": "/jeremy-munroe/index.html",
     "static/media/black-cursor.svg": "/jeremy-munroe/static/media/black-cursor.9a8fb80aabca44ed1f1a.svg",
-    "main.6c7db6c1.css.map": "/jeremy-munroe/static/css/main.6c7db6c1.css.map",
-    "main.6bdd5b67.js.map": "/jeremy-munroe/static/js/main.6bdd5b67.js.map",
+    "static/media/white-cursor.svg": "/jeremy-munroe/static/media/white-cursor.6ff6124fc7ffb6eb7d54.svg",
+    "main.eff2d3e5.css.map": "/jeremy-munroe/static/css/main.eff2d3e5.css.map",
+    "main.44b238c9.js.map": "/jeremy-munroe/static/js/main.44b238c9.js.map",
     "313.2910ef09.chunk.js.map": "/jeremy-munroe/static/js/313.2910ef09.chunk.js.map",
     "879.41847149.chunk.js.map": "/jeremy-munroe/static/js/879.41847149.chunk.js.map",
     "787.a8b4d0d5.chunk.js.map": "/jeremy-munroe/static/js/787.a8b4d0d5.chunk.js.map",
     "422.4cff9a70.chunk.js.map": "/jeremy-munroe/static/js/422.4cff9a70.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c7db6c1.css",
-    "static/js/main.6bdd5b67.js"
+    "static/css/main.eff2d3e5.css",
+    "static/js/main.44b238c9.js"
   ]
 }
