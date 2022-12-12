@@ -5,8 +5,10 @@
     height: 80px;
     border-radius: 50%;
     cursor: pointer;
-    text-align: center;
-    margin: 0 auto;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
 }
 .theme-button{
     color: var(--textColor);
