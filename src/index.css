@@ -13,6 +13,7 @@
   --textColor-dark: #fff;
 	--secondaryColor-dark: #2FE0D0;
 }
+
 html,body,#root{
   margin: 0;
   padding: 0;
@@ -32,7 +33,20 @@ p,h1,h2,h3,h4,h5,h6,ul,li{
 body{
   overscroll-behavior: none;
 }
-@media(prefers-color-scheme: dark){
+body.dark {
+  --mainColor: var(--mainColor-dark);
+  --textColor: var(--textColor-dark);
+  --secondaryColor: var(--secondaryColor-dark);
+}
+body.light {
+  --mainColor: var(--mainColor-light);
+  --textColor: var(--textColor-light);
+  --secondaryColor: var(--secondaryColor-light);
+}
+
+
+
+/* @media(prefers-color-scheme: dark){
   :root{
     --mainColor: var(--mainColor-dark);
     --textColor: var(--textColor-dark);
@@ -40,6 +54,7 @@ body{
     cursor: url('./assets/images/cursor/white-cursor.svg'),auto; 
   }
 }
+
 @media(prefers-color-scheme: light){
   :root{
     --mainColor: var(--mainColor-light);
@@ -47,4 +62,14 @@ body{
     --secondaryColor: var(--secondaryColor-light);
     cursor: url('./assets/images/cursor/black-cursor.svg'),auto; 
   }
+} */
+[color-scheme="dark"] {
+  --mainColor: var(--mainColor-dark);
+  --textColor: var(--textColor-dark);
+  --secondaryColor: var(--secondaryColor-dark);
+}
+[color-scheme="light"] {
+  --mainColor: var(--mainColor-light);
+  --textColor: var(--textColor-light);
+  --secondaryColor: var(--secondaryColor-light);
 }

@@ -1,4 +1,21 @@
-
+.theme{
+    position: absolute;
+    background: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+}
+.theme-button{
+    color: var(--textColor);
+    text-align: center;
+}
+.theme:is(:hover, :focus){
+    background-color: var(--secondaryColor);
+    opacity: .8;
+}
 .explore{
     letter-spacing: .4rem;
     font-weight: 500;
@@ -26,7 +43,6 @@
     height: 100%;
     /* background: #000; */
     border: 1px solid var(--textColor);
-    
     /* border: 1.2px solid #000; */
     border-radius: 14px;
     z-index: 1;
@@ -40,5 +56,3 @@
 .explore:hover::before{
     transform: scaleX(1);
 }
-
-
