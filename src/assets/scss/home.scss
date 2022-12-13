@@ -4,6 +4,9 @@
     height: 100%;
     margin: 0 auto;
 }
-
-
-
+hr{
+background-color: var(--portfolioColor);
+}
+h3, li{
+color: var(--headingColor);
+}

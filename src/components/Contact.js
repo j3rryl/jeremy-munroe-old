@@ -8,7 +8,7 @@ const Contact = () => {
     <div className='md:overflow-hidden my-10 w-full h-full md:m-10 relative inline-block md:flex items-center justify-around'>
       <div className='px-5 mb-10 md:mb-0 md:h-3/4 text-center md:w-1/3 '>
         <h3 className='text-2xl text-center'>Link Up</h3>
-        <hr className='bg-portfolio-gray my-6 h-0.5' />
+        <hr className='my-6 h-0.5' />
         <ul className='text-justify'>
           <li>
           <FontAwesomeIcon icon={faEnvelope} size='2x' className='f-icon email'/>

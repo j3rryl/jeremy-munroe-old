@@ -32,7 +32,7 @@ const Home = () => {
         </div>
         <div className='px-5 md:h-2/5 md:w-2/5 m-auto border-none'>
           <h3 className=' text-2xl text-center'>Website and User Interface Design</h3>
-          <hr className='bg-portfolio-gray my-6 h-0.5'/>
+          <hr className='my-6 h-0.5'/>
           <p className='text-justify tracking-widest'>
           I am a Codaholic very much in love with anything which has 1s and 0s.
           This has culminated an adventure I took to learn every possible language I can.
@@ -48,7 +48,7 @@ const Home = () => {
 
       <div className='px-5 h-3/4 text-center md:h-2/3 md:w-1/2 m-auto'>
         <h3 className='text-2xl text-center'>About Me</h3>
-        <hr className='bg-portfolio-gray my-6 h-0.5' />
+        <hr className='my-6 h-0.5' />
         <p className='text-center tracking-widest'>
         Education, hobbies and all past work experiences here.
         </p>
@@ -71,7 +71,7 @@ const Home = () => {
         </div>
         <div className='px-5 h-3/4 text-center md:h-2/3 md:w-1/2 m-auto'>
           <h3 className='text-2xl text-center'>Projects</h3>
-          <hr className='bg-portfolio-gray my-6 h-0.5'/>
+          <hr className='my-6 mx-auto h-0.5 w-4/5'/>
           <p className='text-center tracking-widest'>
             Ongoing work and previous works.
           </p>

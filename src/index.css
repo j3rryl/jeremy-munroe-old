@@ -5,13 +5,24 @@
 :root {
 	--mainColor-light: #fff;
   --textColor-light: #000;
+  --secondaryColor-light: #db2b39;
+  --headingColor-light: #000;
+  --portfolioColor-light: #e6e6e6;
+
   --portfolioGray: #e6e6e6;
-	--mainColorLight: #5767aa;
-	--secondaryColor-light: #db2b39;
 
   --mainColor-dark: #000;
   --textColor-dark: #fff;
 	--secondaryColor-dark: #2FE0D0;
+  --headingColor-dark: #2FE0D0;
+  --portfolioColor-dark: #2FE0D0;
+
+
+  --mainColor: var(--mainColor-light);
+  --textColor: var(--textColor-light);
+  --secondaryColor: var(--secondaryColor-light);
+  --headingColor: var(--headingColor-light);
+  --portfolioColor: var(--portfolioColor-light);
 }
 
 html,body,#root{
@@ -23,9 +34,10 @@ html,body,#root{
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
-p,h1,h2,h3,h4,h5,h6,ul,li{
+p,h1,h2,h4,h5,h6,ul,li{
   color: var(--textColor);
 }
+
 ::-webkit-scrollbar {
   display:none;
 }
@@ -33,24 +45,14 @@ p,h1,h2,h3,h4,h5,h6,ul,li{
 body{
   overscroll-behavior: none;
 }
-body.dark {
-  --mainColor: var(--mainColor-dark);
-  --textColor: var(--textColor-dark);
-  --secondaryColor: var(--secondaryColor-dark);
-}
-body.light {
-  --mainColor: var(--mainColor-light);
-  --textColor: var(--textColor-light);
-  --secondaryColor: var(--secondaryColor-light);
-}
-
-
 
 /* @media(prefers-color-scheme: dark){
   :root{
     --mainColor: var(--mainColor-dark);
     --textColor: var(--textColor-dark);
     --secondaryColor: var(--secondaryColor-dark);
+    --headingColor: var(--headingColor-dark);
+    --portfolioColor: var(--portfolioColor-dark);
     cursor: url('./assets/images/cursor/white-cursor.svg'),auto; 
   }
 }
@@ -60,6 +62,8 @@ body.light {
     --mainColor: var(--mainColor-light);
     --textColor: var(--textColor-light);
     --secondaryColor: var(--secondaryColor-light);
+    --headingColor: var(--headingColor-light);
+    --portfolioColor: var(--portfolioColor-light);
     cursor: url('./assets/images/cursor/black-cursor.svg'),auto; 
   }
 } */
@@ -67,9 +71,15 @@ body.light {
   --mainColor: var(--mainColor-dark);
   --textColor: var(--textColor-dark);
   --secondaryColor: var(--secondaryColor-dark);
+  --headingColor: var(--headingColor-dark);
+  --portfolioColor: var(--portfolioColor-dark);
 }
 [color-scheme="light"] {
   --mainColor: var(--mainColor-light);
   --textColor: var(--textColor-light);
   --secondaryColor: var(--secondaryColor-light);
+  --headingColor: var(--headingColor-light);
+  --portfolioColor: var(--portfolioColor-light);
+  cursor: url('./assets/images/cursor/black-cursor.svg'),auto; 
+
 }

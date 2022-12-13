@@ -5,7 +5,7 @@ const Form = () => {
   return (
   <form className='h-fit text-center border-2 border-portfolio-gray rounded-2xl'>
         <h3 className=" text-2xl text-center my-3">Contact Me</h3>
-        <hr className='w-3/4 m-auto bg-portfolio-gray my-6 h-0.5' />
+        <hr className='w-3/4 m-auto my-6 h-0.5' />
         <input type='text' className="input-field" placeholder='Your Name'/><br />
         <input type='email' className="input-field" placeholder='Your Email'/><br />
         <input type='text' className="input-field" placeholder='Subject'/><br />

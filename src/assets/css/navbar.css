@@ -1,6 +1,9 @@
 header{
 	background-color: var(--mainColor);
 }
+.title{
+	color: var(--secondaryColor);
+}
 nav a {
 	margin: 0 1rem;
 	color: var(--textColor);

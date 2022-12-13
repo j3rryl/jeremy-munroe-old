@@ -3,7 +3,6 @@ import {motion} from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import '../assets/css/button.css'
-import { useEffect, useState } from 'react'
 
 const Splash = ({toggleTheme, darkTheme}) => {
   let navigate=useNavigate()  
