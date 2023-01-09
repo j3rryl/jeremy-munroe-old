@@ -80,7 +80,7 @@ const Projects = () => {
 
       <div className='mx-5 my-10 h-fit md:h-full md:m-10 relative inline-block md:flex items-center justify-around'>
             <div className='md:hidden md:mb-0 mb-10 h-fit w-full md:h-full md:w-1/2 m-auto'>
-            <FadeSlider urls={[s1,s2,s3,s4,s5]} />
+            <FadeSlider urls={[s10,s11]} />
             </div>
             <div className='px-5 text-center h-full md:w-1/2 m-auto'>
               <h3 className='text-2xl text-center'>Tiona CRM</h3>
