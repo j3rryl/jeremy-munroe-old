@@ -116,7 +116,7 @@ const Projects = () => {
           <ul className='text-justify tracking-widest'>
           <li>What a remake of the M-Tickets platform could look like. </li>
           </ul>
-          <a className='tracking-widest' href='https://j3rryl.github.io/kyoju/' target='_blank'
+          <a className='tracking-widest' href='https://github.com/j3rryl/m-tickets' target='_blank'
           rel="noopener noreferrer">
           <button className='explore px-10 py-5 text-2xl font-caveat font-extrabold my-8 mx-auto text-center h-fit w-fit'>
           View
