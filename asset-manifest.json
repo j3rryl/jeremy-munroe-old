@@ -1,16 +1,20 @@
 {
   "files": {
     "main.css": "/jeremy-munroe/static/css/main.cc2bd41c.css",
-    "main.js": "/jeremy-munroe/static/js/main.e79577b0.js",
+    "main.js": "/jeremy-munroe/static/js/main.596894c1.js",
     "static/js/313.566f8010.chunk.js": "/jeremy-munroe/static/js/313.566f8010.chunk.js",
     "static/js/879.41847149.chunk.js": "/jeremy-munroe/static/js/879.41847149.chunk.js",
     "static/js/787.a8b4d0d5.chunk.js": "/jeremy-munroe/static/js/787.a8b4d0d5.chunk.js",
     "static/js/422.4cff9a70.chunk.js": "/jeremy-munroe/static/js/422.4cff9a70.chunk.js",
+    "static/media/Screenshot (15).png": "/jeremy-munroe/static/media/Screenshot (15).fea9a5c4fa0d235be358.png",
     "static/media/Screenshot (1).png": "/jeremy-munroe/static/media/Screenshot (1).c0526b28a7ea5a4885ef.png",
     "static/media/Screenshot (9).png": "/jeremy-munroe/static/media/Screenshot (9).22b3a798f9121191c121.png",
     "static/media/Screenshot (7).png": "/jeremy-munroe/static/media/Screenshot (7).1585c900029bdfaf948b.png",
     "static/media/work.jpg": "/jeremy-munroe/static/media/work.de504756c3efd74f4123.jpg",
+    "static/media/Screenshot (17).png": "/jeremy-munroe/static/media/Screenshot (17).dfb3363def308e6390cd.png",
+    "static/media/Screenshot (16).png": "/jeremy-munroe/static/media/Screenshot (16).b3e97503e4ba41bd3551.png",
     "static/media/Screenshot (6).png": "/jeremy-munroe/static/media/Screenshot (6).47c745096ce0ab1d097e.png",
+    "static/media/Screenshot (18).png": "/jeremy-munroe/static/media/Screenshot (18).6187abf3392973bd8269.png",
     "static/media/skills.jpg": "/jeremy-munroe/static/media/skills.66d73c06cf00aae440c7.jpg",
     "static/media/Screenshot (4).png": "/jeremy-munroe/static/media/Screenshot (4).d0748d76243e5d1ced4d.png",
     "static/media/Screenshot (3).png": "/jeremy-munroe/static/media/Screenshot (3).990cfc05e82fedcbb207.png",
@@ -44,7 +48,7 @@
     "index.html": "/jeremy-munroe/index.html",
     "static/media/black-cursor.svg": "/jeremy-munroe/static/media/black-cursor.9a8fb80aabca44ed1f1a.svg",
     "main.cc2bd41c.css.map": "/jeremy-munroe/static/css/main.cc2bd41c.css.map",
-    "main.e79577b0.js.map": "/jeremy-munroe/static/js/main.e79577b0.js.map",
+    "main.596894c1.js.map": "/jeremy-munroe/static/js/main.596894c1.js.map",
     "313.566f8010.chunk.js.map": "/jeremy-munroe/static/js/313.566f8010.chunk.js.map",
     "879.41847149.chunk.js.map": "/jeremy-munroe/static/js/879.41847149.chunk.js.map",
     "787.a8b4d0d5.chunk.js.map": "/jeremy-munroe/static/js/787.a8b4d0d5.chunk.js.map",
@@ -52,6 +56,6 @@
   },
   "entrypoints": [
     "static/css/main.cc2bd41c.css",
-    "static/js/main.e79577b0.js"
+    "static/js/main.596894c1.js"
   ]
 }
