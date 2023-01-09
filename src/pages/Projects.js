@@ -17,6 +17,11 @@ import s9 from '../assets/images/projects/kyoju/Screenshot (9).png'
 import s10 from '../assets/images/projects/tiona/Screenshot (13).png'
 import s11 from '../assets/images/projects/tiona/Screenshot (14).png'
 
+import s12 from '../assets/images/projects/ticketi/Screenshot (15).png'
+import s13 from '../assets/images/projects/ticketi/Screenshot (16).png'
+import s14 from '../assets/images/projects/ticketi/Screenshot (17).png'
+import s15 from '../assets/images/projects/ticketi/Screenshot (18).png'
+
 const Projects = () => {
   return (
     <motion.div 
@@ -42,7 +47,7 @@ const Projects = () => {
               <h3 className='text-2xl text-center'>SoulBoosters</h3>
               <hr className='bg-portfolio-gray my-6 h-0.5'/>
               <ul className='text-center tracking-widest'>
-              <li>Tracking climate change across the country.</li>
+              <li>React Website Tracking climate change across the country.</li>
               </ul>
               <a className='tracking-widest' href='https://j3rryl.github.io/soulboosters/' target='_blank'
               rel="noopener noreferrer">
@@ -86,7 +91,7 @@ const Projects = () => {
               <h3 className='text-2xl text-center'>Tiona CRM</h3>
               <hr className='bg-portfolio-gray my-6 h-0.5'/>
               <ul className='text-center tracking-widest'>
-              <li>Java application for managing customers.</li>
+              <li>Java application for managing customers. </li>
               </ul>
               <a className='tracking-widest' href='https://github.com/j3rryl/Tiona' target='_blank'
               rel="noopener noreferrer">
@@ -100,6 +105,25 @@ const Projects = () => {
             <FadeSlider urls={[s10,s11]} />
             </div>
         </div>
+
+        <div className='mx-5 h-full md:overflow-hidden md:m-10 relative inline-block md:flex items-center justify-around'>
+        <div className='md:mb-0 mb-10 h-full md:w-1/2 m-auto'>
+        <FadeSlider urls={[s12,s13,s14,s15]} />
+        </div>
+        <div className='px-5 h-full md:w-1/2 m-auto'>
+          <h3 className='text-2xl text-center'>M-Tickets Remake</h3>
+          <hr className='bg-portfolio-gray my-6 h-0.5'/>
+          <ul className='text-justify tracking-widest'>
+          <li>What a remake of the M-Tickets platform could look like. </li>
+          </ul>
+          <a className='tracking-widest' href='https://j3rryl.github.io/kyoju/' target='_blank'
+          rel="noopener noreferrer">
+          <button className='explore px-10 py-5 text-2xl font-caveat font-extrabold my-8 mx-auto text-center h-fit w-fit'>
+          View
+          </button>
+          </a>
+        </div>
+      </div>
 
 
       </div>
