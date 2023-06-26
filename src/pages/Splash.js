@@ -18,9 +18,9 @@ const Splash = ({toggleTheme, darkTheme}) => {
     exit={{opacity:0}}
     >
     <div className='m-0 w-full h-full text-center overflow-hidden'>
-      <button className='theme' onClick={toggleTheme}>
+      {/* <button className='theme' onClick={toggleTheme}>
         <FontAwesomeIcon className='theme-button ' icon={darkTheme?faMoon:faSun} size='2x'/>
-      </button>
+      </button> */}
       <div className='w-full h-full m-auto text-center flex justify-center items-center'>
         <div className='w-fit inline-block justify-around items-center'>
           <h1 className='my-4 mx-5 tracking-[.35em] text-center text-3xl font-caveat'>Jeremy Munroe</h1>

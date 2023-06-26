@@ -1,5 +1,6 @@
 import '../assets/scss/about.scss'
 import lab1 from '../assets/images/about/lab1.jpg'
+import skylabs from '../assets/images/about/skylab-logo.png'
 import lab2 from '../assets/images/about/lab2.jpg'
 import lab3 from '../assets/images/about/lab3.jpg'
 import ai from '../assets/images/about/ai.jpg'
@@ -24,7 +25,37 @@ const About = () => {
       </div>
   {/* Work */}
   <h3 className='text-3xl text-left ml-10 mt-24'>Work Experience</h3>
-  <hr className='bg-portfolio-gray my-6 h-0.5 mx-5 w-1/2'/>
+  {/* <hr className='bg-portfolio-gray my-6 h-0.5 mx-5 w-1/2'/> */}
+  {/* Skylabs */}
+  <div className='mx-5 my-10 h-fit md:h-full md:m-10 relative inline-block md:flex items-center justify-around'>
+            <div className='md:hidden md:mb-0 mb-10 h-fit w-full md:h-full md:w-1/2 m-auto'>
+              <FadeSlider urls={[skylabs]}/>
+            </div>
+            <div className='px-5 text-center h-full md:w-1/2 m-auto'>
+              <h3 className='text-2xl text-center'>Software Developer Intern</h3>
+              <hr className='bg-portfolio-gray my-6 h-0.5'/>
+              <p className='text-center tracking-widest'>My major roles included, but not limited to:</p>
+              <ul className='text-center tracking-widest'>
+              <li>Developed a system both backend and frontend for <a href='https://upesy.co.ke/' style={{
+                color:"blue"
+              }} target='_blank'>Upesy</a>, an organization which connects security providers to clients, either B2B or B2C.</li>
+              <li>Maintained the company application, <a href='https://cleanisha.com/' style={{
+                color:"blue"
+              }} target='_blank'>Cleanisha</a>, by ensuring updates were rolled out smoothly without disrupting its eco-system.</li>
+              <li>Developed a public portal webpage for <a href='http://majidata.georesearch.co.ke/' style={{
+                color:"blue",
+              }}>WASREB</a>, a government institution.</li>
+              <li>Maintained the popular system, <a href='https://apptivateafrica.com/' style={{
+                color:"blue"
+              }} target='_blank'>Apptivate</a>, by ensuring the mobile application was still on par with current technology standards.</li>
+              </ul>
+            </div>
+
+            <div className='hidden md:flex h-fit w-full md:h-full md:w-1/2 m-auto'>
+              <FadeSlider urls={[skylabs]}/>
+            </div>
+        </div>
+      {/* Strathmore */}
       <div className=' mx-5 h-fit md:m-10 relative inline-block md:flex items-center justify-around'>
         <div className='md:mb-0 mb-10 h-fit w-full md:w-1/2 md:h-full m-auto'>
         <FadeSlider urls={[lab1,lab2,lab3]} />

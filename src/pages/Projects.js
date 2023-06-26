@@ -22,6 +22,26 @@ import s13 from '../assets/images/projects/ticketi/Screenshot (16).png'
 import s14 from '../assets/images/projects/ticketi/Screenshot (17).png'
 import s15 from '../assets/images/projects/ticketi/Screenshot (18).png'
 
+import u1 from '../assets/images/projects/upesy/u1.png'
+import u2 from '../assets/images/projects/upesy/u2.png'
+import u3 from '../assets/images/projects/upesy/u3.png'
+import u4 from '../assets/images/projects/upesy/u4.png'
+import u5 from '../assets/images/projects/upesy/u5.png'
+import u6 from '../assets/images/projects/upesy/u6.png'
+import u7 from '../assets/images/projects/upesy/u7.png'
+import u8 from '../assets/images/projects/upesy/u8.png'
+
+import w1 from '../assets/images/projects/wasreb/w1.png'
+import w2 from '../assets/images/projects/wasreb/w2.png'
+import w3 from '../assets/images/projects/wasreb/w3.png'
+import w4 from '../assets/images/projects/wasreb/w4.png'
+
+import a1 from '../assets/images/projects/alvocat/a1.png'
+import a2 from '../assets/images/projects/alvocat/a2.png'
+import a3 from '../assets/images/projects/alvocat/a3.png'
+import a4 from '../assets/images/projects/alvocat/a4.png'
+
+
 const Projects = () => {
   return (
     <motion.div 
@@ -39,6 +59,64 @@ const Projects = () => {
     <hr className='bg-portfolio-gray my-6 h-0.5 w-1/4'/>
 
       <div>
+      <div className='mx-5 h-full md:overflow-hidden md:m-10 relative inline-block md:flex items-center justify-around'>
+        <div className='md:mb-0 mb-10 h-full md:w-1/2 m-auto'>
+        <FadeSlider urls={[a1, a2,a3,a4]} />
+        </div>
+        <div className='px-5 h-full md:w-1/2 m-auto'>
+          <h3 className='text-2xl text-center'>Alvocat Fresh</h3>
+          <hr className='bg-portfolio-gray my-6 h-0.5'/>
+          <ul className='text-justify tracking-widest'>
+          <li>A platform for displaying farm produce to the public and how to purchase some. </li>
+          </ul>
+          <a className='tracking-widest' href='https://alvocatfresh.co.ke/' target='_blank'
+          rel="noopener noreferrer">
+          <button className='explore px-10 py-5 text-2xl font-caveat font-extrabold my-8 mx-auto text-center h-fit w-fit'>
+          View
+          </button>
+          </a>
+        </div>
+      </div>
+      <div className='mx-5 my-10 h-fit md:h-full md:m-10 relative inline-block md:flex items-center justify-around'>
+            <div className='md:hidden md:mb-0 mb-10 h-fit w-full md:h-full md:w-1/2 m-auto'>
+            <FadeSlider urls={[u1, u2, u3,u4,u5,u6,u7,u8]} />
+            </div>
+            <div className='px-5 text-center h-full md:w-1/2 m-auto'>
+              <h3 className='text-2xl text-center'>Upesy</h3>
+              <hr className='bg-portfolio-gray my-6 h-0.5'/>
+              <ul className='text-center tracking-widest'>
+              <li>Node js system to help curb security in the country</li>
+              </ul>
+              <a className='tracking-widest' href='https://upesy.co.ke/' target='_blank'
+              rel="noopener noreferrer">
+              <button className='explore px-10 py-5 text-2xl font-caveat font-extrabold my-8 mx-auto text-center h-fit w-fit'>
+              View
+              </button>
+              </a>
+            </div>
+
+            <div className='hidden md:flex h-fit w-full md:h-full md:w-1/2 m-auto'>
+            <FadeSlider urls={[u1, u2, u3,u4,u5,u6,u7,u8]} />
+            </div>
+        </div>
+      <div className='mx-5 h-full md:overflow-hidden md:m-10 relative inline-block md:flex items-center justify-around'>
+        <div className='md:mb-0 mb-10 h-full md:w-1/2 m-auto'>
+        <FadeSlider urls={[w1, w2,w3,w4]} />
+        </div>
+        <div className='px-5 h-full md:w-1/2 m-auto'>
+          <h3 className='text-2xl text-center'>Wasreb</h3>
+          <hr className='bg-portfolio-gray my-6 h-0.5'/>
+          <ul className='text-justify tracking-widest'>
+          <li>A system for displaying KPIs and other government resources relating to water and sewerage to the public. </li>
+          </ul>
+          <a className='tracking-widest' href='http://majidata.georesearch.co.ke/' target='_blank'
+          rel="noopener noreferrer">
+          <button className='explore px-10 py-5 text-2xl font-caveat font-extrabold my-8 mx-auto text-center h-fit w-fit'>
+          View
+          </button>
+          </a>
+        </div>
+      </div>
         <div className='mx-5 my-10 h-fit md:h-full md:m-10 relative inline-block md:flex items-center justify-around'>
             <div className='md:hidden md:mb-0 mb-10 h-fit w-full md:h-full md:w-1/2 m-auto'>
             <FadeSlider urls={[s1,s2,s3,s4,s5]} />
