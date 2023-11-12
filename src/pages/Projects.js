@@ -46,6 +46,12 @@ import f2 from "../assets/images/projects/fms/fms2.png";
 import f3 from "../assets/images/projects/fms/fms3.png";
 import f4 from "../assets/images/projects/fms/fms4.png";
 
+import sams1 from "../assets/images/projects/sams/sams1.png";
+import sams2 from "../assets/images/projects/sams/sams2.png";
+import sams3 from "../assets/images/projects/sams/sams3.png";
+import sams4 from "../assets/images/projects/sams/sams4.png";
+import sams5 from "../assets/images/projects/sams/sams5.png";
+
 const Projects = () => {
   return (
     <motion.div
@@ -63,6 +69,31 @@ const Projects = () => {
         <hr className="bg-portfolio-gray my-6 h-0.5 w-1/4" />
 
         <div>
+          <div className="mx-5 h-full md:overflow-hidden md:m-10 relative inline-block md:flex items-center justify-around">
+            <div className="md:mb-0 mb-10 h-full md:w-1/2 m-auto">
+              <FadeSlider urls={[sams1, sams2, sams3, sams4, sams5]} />
+            </div>
+            <div className="px-5 h-full md:w-1/2 m-auto">
+              <h3 className="text-2xl text-center">SAMS</h3>
+              <hr className="bg-portfolio-gray my-6 h-0.5" />
+              <ul className="text-justify tracking-widest">
+                <li>
+                  A Student Management System revamp of the original made with
+                  NextJS, NodeJS, MySQL and Redis.
+                </li>
+              </ul>
+              <a
+                className="tracking-widest"
+                href="http://35.244.58.160/dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="explore px-10 py-5 text-2xl font-caveat font-extrabold my-8 mx-auto text-center h-fit w-fit">
+                  View
+                </button>
+              </a>
+            </div>
+          </div>
           <div className="mx-5 my-10 h-fit md:h-full md:m-10 relative inline-block md:flex items-center justify-around">
             <div className="md:hidden md:mb-0 mb-10 h-fit w-full md:h-full md:w-1/2 m-auto">
               <FadeSlider urls={[f1, f2, f3, f4]} />
