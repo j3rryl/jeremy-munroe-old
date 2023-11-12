@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jeremy-munroe/static/css/main.cc2bd41c.css",
-    "main.js": "/jeremy-munroe/static/js/main.9068c0dd.js",
+    "main.js": "/jeremy-munroe/static/js/main.1927af6f.js",
     "static/js/313.566f8010.chunk.js": "/jeremy-munroe/static/js/313.566f8010.chunk.js",
     "static/js/879.41847149.chunk.js": "/jeremy-munroe/static/js/879.41847149.chunk.js",
     "static/js/787.a8b4d0d5.chunk.js": "/jeremy-munroe/static/js/787.a8b4d0d5.chunk.js",
@@ -9,6 +9,7 @@
     "static/media/Screenshot (15).png": "/jeremy-munroe/static/media/Screenshot (15).fea9a5c4fa0d235be358.png",
     "static/media/Screenshot (1).png": "/jeremy-munroe/static/media/Screenshot (1).c0526b28a7ea5a4885ef.png",
     "static/media/Screenshot (9).png": "/jeremy-munroe/static/media/Screenshot (9).22b3a798f9121191c121.png",
+    "static/media/fms1.png": "/jeremy-munroe/static/media/fms1.95732de3c9e48caeff0e.png",
     "static/media/Screenshot (7).png": "/jeremy-munroe/static/media/Screenshot (7).1585c900029bdfaf948b.png",
     "static/media/w1.png": "/jeremy-munroe/static/media/w1.8dfe0ce147758b2188a5.png",
     "static/media/work.jpg": "/jeremy-munroe/static/media/work.de504756c3efd74f4123.jpg",
@@ -17,8 +18,13 @@
     "static/media/a4.png": "/jeremy-munroe/static/media/a4.4e0bf49e89626c3bd04e.png",
     "static/media/Screenshot (16).png": "/jeremy-munroe/static/media/Screenshot (16).b3e97503e4ba41bd3551.png",
     "static/media/Screenshot (6).png": "/jeremy-munroe/static/media/Screenshot (6).47c745096ce0ab1d097e.png",
+    "static/media/sams3.png": "/jeremy-munroe/static/media/sams3.abea384244c5c1d44867.png",
+    "static/media/sams5.png": "/jeremy-munroe/static/media/sams5.c8cbfba2492d042ffce8.png",
+    "static/media/sams1.png": "/jeremy-munroe/static/media/sams1.b0dbf977771821ed3888.png",
     "static/media/a1.png": "/jeremy-munroe/static/media/a1.1f61a1511c9cd30bf9c6.png",
     "static/media/Screenshot (18).png": "/jeremy-munroe/static/media/Screenshot (18).6187abf3392973bd8269.png",
+    "static/media/sams2.png": "/jeremy-munroe/static/media/sams2.d7c52900fe7eed6966ef.png",
+    "static/media/sams4.png": "/jeremy-munroe/static/media/sams4.4f732cc1982e1aabac62.png",
     "static/media/skills.jpg": "/jeremy-munroe/static/media/skills.66d73c06cf00aae440c7.jpg",
     "static/media/Screenshot (4).png": "/jeremy-munroe/static/media/Screenshot (4).d0748d76243e5d1ced4d.png",
     "static/media/u4.png": "/jeremy-munroe/static/media/u4.b5d63cc724edf39ef31d.png",
@@ -33,6 +39,7 @@
     "static/media/u5.png": "/jeremy-munroe/static/media/u5.2ec2bd9ac844d660cae7.png",
     "static/media/assis.webp": "/jeremy-munroe/static/media/assis.2ad2086b3583e7513c17.webp",
     "static/media/u1.png": "/jeremy-munroe/static/media/u1.484537e616a1ccce00c1.png",
+    "static/media/fms3.png": "/jeremy-munroe/static/media/fms3.9b63967ac26a332d059e.png",
     "static/media/u8.png": "/jeremy-munroe/static/media/u8.29faaafb62829773a94d.png",
     "static/media/laptop-frame.png": "/jeremy-munroe/static/media/laptop-frame.9a57d78c3d3284e9a6ea.png",
     "static/media/u2.png": "/jeremy-munroe/static/media/u2.3f09f676d008e0f20b11.png",
@@ -41,10 +48,12 @@
     "static/media/u6.png": "/jeremy-munroe/static/media/u6.42ba0a71dfcebd7ff2e9.png",
     "static/media/corel.webp": "/jeremy-munroe/static/media/corel.4d54d70d51b91bc1e74d.webp",
     "static/media/u3.png": "/jeremy-munroe/static/media/u3.dc294bbfdb90513e430a.png",
+    "static/media/fms4.png": "/jeremy-munroe/static/media/fms4.1e187a16694d5368ae72.png",
     "static/media/w2.png": "/jeremy-munroe/static/media/w2.96149b72bf798cf5a78b.png",
     "static/media/resume.webp": "/jeremy-munroe/static/media/resume.3b3883badc0c183845e8.webp",
     "static/media/java.jpg": "/jeremy-munroe/static/media/java.0df8dadbe2ecde20de07.jpg",
     "static/media/Screenshot (2).png": "/jeremy-munroe/static/media/Screenshot (2).fff83cd45a3886575871.png",
+    "static/media/fms2.png": "/jeremy-munroe/static/media/fms2.c2fa8c7fede2df86bf5a.png",
     "static/media/ap.webp": "/jeremy-munroe/static/media/ap.99099b163de451b0e13c.webp",
     "static/media/nema.jpg": "/jeremy-munroe/static/media/nema.29b33532255269ba3189.jpg",
     "static/media/Screenshot (5).png": "/jeremy-munroe/static/media/Screenshot (5).fc24ce2f1dd47192c82f.png",
@@ -65,7 +74,7 @@
     "index.html": "/jeremy-munroe/index.html",
     "static/media/black-cursor.svg": "/jeremy-munroe/static/media/black-cursor.9a8fb80aabca44ed1f1a.svg",
     "main.cc2bd41c.css.map": "/jeremy-munroe/static/css/main.cc2bd41c.css.map",
-    "main.9068c0dd.js.map": "/jeremy-munroe/static/js/main.9068c0dd.js.map",
+    "main.1927af6f.js.map": "/jeremy-munroe/static/js/main.1927af6f.js.map",
     "313.566f8010.chunk.js.map": "/jeremy-munroe/static/js/313.566f8010.chunk.js.map",
     "879.41847149.chunk.js.map": "/jeremy-munroe/static/js/879.41847149.chunk.js.map",
     "787.a8b4d0d5.chunk.js.map": "/jeremy-munroe/static/js/787.a8b4d0d5.chunk.js.map",
@@ -73,6 +82,6 @@
   },
   "entrypoints": [
     "static/css/main.cc2bd41c.css",
-    "static/js/main.9068c0dd.js"
+    "static/js/main.1927af6f.js"
   ]
 }
